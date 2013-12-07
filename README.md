@@ -1,4 +1,4 @@
-SlidingMenu
+Android API Guide 
 ===========
 
 Android API Guide is an application which can read or download Android official guide from site:
