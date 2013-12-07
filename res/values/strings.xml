@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android API Guides</string>
+    <string name="app_cover_name">Android API Guides v1.1</string>
+    <string name="msg_exit_hint">Click again to exit</string>
+    
+    <!-- Left Flagment -->
+    <string name="left_title">Contents</string>
+	<string name="left_title_et_hint">Search</string>
+    <string name="content_home">Android API Guide</string>
+    
+    <!-- Right Flagment -->
+    <string name="setting">Setting</string>
+    <string name="sync">Sync</string>
+    <string name="sync_flag">Only By WiFI/3G</string>
+    <string name="last_read_content">Last Read Content</string>
+    <string name="continue_btn">Continue</string>
+    <string name="about">About</string>
+    <string name="introduce">
+		Android API is application which displays all the content at: http://developer.android.com/guide/components/index.html.
+	</string>
+	<string name="contact_title">Contact</string>
+	<string name="contact">tangqi1101@gmail.com</string>
+	
+	
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string-array name="branch_array">
+		<item>1,App Components</item>
+		<item>2,User Interface</item>
+		<item>3,App Resources</item>
+		<item>4,Animation and Graphics</item>
+		<item>5,Computation</item>
+		<item>6,Media and Camera</item>
+		<item>7,Location and Sensors APIs</item>
+		<item>8,Connectivity</item>
+		<item>9,Text and Input</item>
+		<item>10,Data Storage</item>
+		<item>11,Administration</item>
+		<item>12,Web Apps</item>
+		<item>13,Best Practices</item>
+    </string-array>
+    
+    <string-array name="array1">
+        <item>1,L1,0,App Components,http://developer.android.com/guide/components/index.html</item>
+        <item>2,L2,1,App Fundamentals,http://developer.android.com/guide/components/index.html</item>
+        <item>3,L2,1,Activities,http://developer.android.com/guide/components/activities.html</item>
+        <item>4,L3,3,Fragments,http://developer.android.com/guide/components/fragments.html</item>
+        <item>5,L3,3,Loaders,http://developer.android.com/guide/components/loaders.html</item>
+        <item>6,L3,3,Tasks and Back Stack,http://developer.android.com/guide/components/tasks-and-back-stack.html</item>
+        <item>7,L2,1,Services,http://developer.android.com/guide/components/services.html</item>
+        <item>8,L3,7,Bound Services,http://developer.android.com/guide/components/bound-services.html</item>
+        <item>9,L3,7,AIDL,http://developer.android.com/guide/components/aidl.html</item>
+        <item>10,L2,1,Content Providers,http://developer.android.com/guide/topics/providers/content-providers.html</item>
+        <item>11,L3,10,Content Provider Basics,http://developer.android.com/guide/topics/providers/content-provider-basics.html</item>
+        <item>12,L3,10,Creating a Content Provider,http://developer.android.com/guide/topics/providers/content-provider-creating.html</item>
+        <item>13,L3,10,Calendar Provider,http://developer.android.com/guide/topics/providers/calendar-provider.html</item>
+        <item>14,L3,10,Contacts Provider,http://developer.android.com/guide/topics/providers/contacts-provider.html</item>
+        <item>15,L3,10,Storage Access Framework,http://developer.android.com/guide/topics/providers/document-provider.html</item>
+        <item>16,L2,1,Intents and Intent Filters,http://developer.android.com/guide/components/intents-filters.html</item>
+        <item>17,L2,1,Processes and Threads,http://developer.android.com/guide/components/processes-and-threads.html</item>
+        <item>18,L2,1,Permissions,http://developer.android.com/guide/topics/security/permissions.html</item>
+        <item>19,L2,1,App Widgets,http://developer.android.com/guide/topics/appwidgets/index.html</item>
+        <item>20,L3,1,App Widget Host,http://developer.android.com/guide/topics/appwidgets/host.html</item>
+    </string-array>
+    
+    <string-array name="array2">
+        <item>1,L1,0,User Interface,http://developer.android.com/guide/topics/ui/index.html</item>
+        <item>2,L2,1,Overview,http://developer.android.com/guide/topics/ui/overview.html</item>
+        <item>3,L2,1,Layouts,http://developer.android.com/guide/topics/ui/declaring-layout.html</item>      
+	        <item>4,L3,3,Linear Layout,http://developer.android.com/guide/topics/ui/layout/linear.html</item>
+	        <item>5,L3,3,Relative Layout,http://developer.android.com/guide/topics/ui/layout/relative.html</item>
+	        <item>6,L3,3,List View,http://developer.android.com/guide/topics/ui/layout/listview.html</item>
+	        <item>7,L3,3,Grid View,http://developer.android.com/guide/topics/ui/layout/gridview.html</item>
+        <item>8,L2,1,Input Controls,http://developer.android.com/guide/topics/ui/controls.html</item>
+	        <item>9,L3,8,Buttons,http://developer.android.com/guide/topics/ui/controls/text.html</item>
+	        <item>10,L3,8,Text Fields,http://developer.android.com/guide/topics/ui/controls/button.html</item>
+	        <item>11,L3,8,Checkboxes,http://developer.android.com/guide/topics/ui/controls/checkbox.html</item>
+	        <item>12,L3,8,Radio Buttons,http://developer.android.com/guide/topics/ui/controls/radiobutton.html</item>
+	        <item>13,L3,8,Toggle Buttons,http://developer.android.com/guide/topics/ui/controls/togglebutton.html</item>
+	        <item>14,L3,8,Spinners,http://developer.android.com/guide/topics/ui/controls/spinner.html</item>
+	        <item>15,L3,8,Pickers,http://developer.android.com/guide/topics/ui/controls/pickers.html</item>
+	    <item>16,L2,1,Input Events,http://developer.android.com/guide/topics/ui/ui-events.html</item>
+        <item>17,L2,1,Menus,http://developer.android.com/guide/topics/ui/menus.html</item>
+        <item>18,L2,1,Action Bar,http://developer.android.com/guide/topics/ui/actionbar.html</item>
+        <item>19,L2,1,Settings,http://developer.android.com/guide/topics/ui/settings.html</item>
+        <item>20,L2,1,Dialogs,http://developer.android.com/guide/topics/ui/dialogs.html</item>
+        <item>21,L2,1,Notifications,http://developer.android.com/guide/topics/ui/notifiers/notifications.html</item>
+        <item>22,L2,1,Toasts,http://developer.android.com/guide/topics/ui/notifiers/toasts.html</item>
+        <item>23,L2,1,Search,http://developer.android.com/guide/topics/search/index.html</item>
+	        <item>24,L3,23,Creating a Search Interface,http://developer.android.com/guide/topics/search/search-dialog.html</item>
+	        <item>25,L3,23,Adding Recent Query Suggestions,http://developer.android.com/guide/topics/search/adding-recent-query-suggestions.html</item>
+	        <item>26,L3,23,Adding Custom Suggestions,http://developer.android.com/guide/topics/search/adding-custom-suggestions.html</item>
+	        <item>27,L3,23,Searchable Configuration,http://developer.android.com/guide/topics/search/searchable-config.html</item>
+        <item>28,L2,1,Drag and Drop,http://developer.android.com/guide/topics/ui/drag-drop.html</item>
+        <item>29,L2,1,Accessibility,http://developer.android.com/guide/topics/ui/accessibility/index.html</item>
+        	<item>30,L3,29,Making Applications Accessible,http://developer.android.com/guide/topics/ui/accessibility/apps.html</item>
+        	<item>31,L3,29,Accessibility Developer Checklist,http://developer.android.com/guide/topics/ui/accessibility/checklist.html</item>
+        	<item>32,L3,29,Building Accessibility Services,http://developer.android.com/guide/topics/ui/accessibility/services.html</item>
+        <item>33,L2,1,Styles and Themes,http://developer.android.com/guide/topics/ui/themes.html</item>
+        <item>34,L2,1,Custom Components,http://developer.android.com/guide/topics/ui/custom-components.html</item>
+    </string-array>
+    
+    <string-array name="array3">
+        <item>1,L1,0,App Resources,http://developer.android.com/guide/topics/resources/index.html</item>
+        <item>2,L2,1,Overview,http://developer.android.com/guide/topics/resources/overview.html</item>
+        <item>3,L2,1,Providing Resources,http://developer.android.com/guide/topics/resources/providing-resources.html</item>
+        <item>4,L2,1,Accessing Resources,http://developer.android.com/guide/topics/resources/accessing-resources.html</item>
+        <item>5,L2,1,Localizing with Resources,http://developer.android.com/guide/topics/resources/localization.html</item>
+        <item>6,L2,1,Resource Types,http://developer.android.com/guide/topics/resources/available-resources.html</item>
+        <item>7,L3,6,Animation,http://developer.android.com/guide/topics/resources/animation-resource.html</item>
+        <item>8,L3,6,Color State List,http://developer.android.com/guide/topics/resources/color-list-resource.html</item>
+        <item>9,L3,6,Drawable,http://developer.android.com/guide/topics/resources/drawable-resource.html</item>
+        <item>10,L3,6,Layout,http://developer.android.com/guide/topics/resources/layout-resource.html</item>
+        <item>11,L3,6,Menu,http://developer.android.com/guide/topics/resources/menu-resource.html</item>
+        <item>12,L3,6,String,http://developer.android.com/guide/topics/resources/string-resource.html</item>
+        <item>13,L3,6,Style,http://developer.android.com/guide/topics/resources/style-resource.html</item>
+        <item>14,L3,6,More Resource Types,http://developer.android.com/guide/topics/resources/more-resources.html</item>
+    </string-array>    
+    
+    <string-array name="array4">
+        <item>1,L1,0,Animation and Graphics,http://developer.android.com/guide/topics/graphics/index.html</item>
+        <item>2,L2,1,Overview,http://developer.android.com/guide/topics/graphics/overview.html</item>
+        <item>3,L2,1,Property Animation,http://developer.android.com/guide/topics/graphics/prop-animation.html</item>
+        <item>4,L2,1,View Animation,http://developer.android.com/guide/topics/graphics/view-animation.html</item>
+        <item>5,L2,1,Drawable Animation,http://developer.android.com/guide/topics/graphics/drawable-animation.html</item>
+        <item>6,L2,1,Canvas and Drawables,http://developer.android.com/guide/topics/graphics/2d-graphics.html</item>
+        <item>7,L3,6,OpenGL ES,http://developer.android.com/guide/topics/graphics/opengl.html</item>
+        <item>8,L3,6,Hardware Acceleration,http://developer.android.com/guide/topics/graphics/hardware-accel.html</item>
+    </string-array>    
+    
+    <string-array name="array5">
+        <item>1,L1,0,Computation,http://developer.android.com/guide/topics/renderscript/index.html</item>
+        <item>2,L2,1,RenderScript,http://developer.android.com/guide/topics/renderscript/compute.html</item>
+        <item>3,L2,1,Advanced RenderScript,http://developer.android.com/guide/topics/renderscript/advanced.html</item>
+        <item>4,L2,1,Runtime API Reference,http://developer.android.com/guide/topics/renderscript/reference.html</item>
+    </string-array>    
+    
+    <string-array name="array6">
+        <item>1,L1,0,Media and Camera,http://developer.android.com/guide/topics/media/index.html</item>
+        <item>2,L2,1,Media Playback,http://developer.android.com/guide/topics/media/mediaplayer.html</item>
+        <item>3,L2,1,Supported Media Formats,http://developer.android.com/guide/appendix/media-formats.html</item>
+        <item>4,L2,1,Audio Capture,http://developer.android.com/guide/topics/media/audio-capture.html</item>
+        <item>5,L2,1,JetPlayer,http://developer.android.com/guide/topics/media/jetplayer.html</item>
+        <item>6,L2,1,Camera,http://developer.android.com/guide/topics/media/camera.html</item>
+    </string-array> 
+       
+    <string-array name="array7">
+        <item>1,L1,0,Location and Sensors APIs,http://developer.android.com/guide/topics/sensors/index.html</item>
+        <item>2,L2,1,Location and Maps,http://developer.android.com/guide/topics/location/index.html</item>
+        <item>3,L2,1,Location Strategies,http://developer.android.com/guide/topics/location/strategies.html</item>
+        <item>4,L2,1,Sensors Overview,http://developer.android.com/guide/topics/sensors/sensors_overview.html</item>
+        <item>5,L2,1,Motion Sensors,http://developer.android.com/guide/topics/sensors/sensors_motion.html</item>
+        <item>6,L2,1,Position Sensors,http://developer.android.com/guide/topics/sensors/sensors_position.html</item>
+        <item>7,L2,1,Environment Sensors,http://developer.android.com/guide/topics/sensors/sensors_environment.html</item>
+    </string-array>    
+    
+    <string-array name="array8">
+        <item>1,L1,0,Connectivity,http://developer.android.com/guide/topics/connectivity/index.html</item>
+        <item>2,L2,1,Bluetooth,http://developer.android.com/guide/topics/connectivity/bluetooth.html</item>
+        	<item>3,L3,2,Bluetooth Low Energy,http://developer.android.com/guide/topics/connectivity/bluetooth-le.html</item>
+        <item>4,L2,1,NFC,http://developer.android.com/guide/topics/connectivity/nfc/index.html</item>
+	        <item>5,L3,4,NFC Basics,http://developer.android.com/guide/topics/connectivity/nfc/nfc.html</item>
+	        <item>6,L3,4,Advanced NFC,http://developer.android.com/guide/topics/connectivity/nfc/advanced-nfc.html</item>
+	        <item>7,L3,4,Host-based Card Emulation,http://developer.android.com/guide/topics/connectivity/nfc/hce.html</item> 
+	    <item>8,L2,1,NFC,http://developer.android.com/guide/topics/connectivity/nfc/index.html</item> 
+		    <item>9,L3,5,NFC Basics,http://developer.android.com/guide/topics/connectivity/nfc/nfc.html</item>
+		    <item>10,L3,8,Advanced NFC,http://developer.android.com/guide/topics/connectivity/nfc/advanced-nfc.html</item>
+		    <item>11,L3,8,Host-based Card Emulation,http://developer.android.com/guide/topics/connectivity/nfc/hce.html</item>
+		<item>12,L2,1,Wi-Fi P2P,http://developer.android.com/guide/topics/connectivity/wifip2p.html</item> 
+		<item>13,L2,1,USB,http://developer.android.com/guide/topics/connectivity/usb/index.html</item>
+		    <item>14,L3,13,Accessory,http://developer.android.com/guide/topics/connectivity/usb/accessory.html</item>
+		    <item>15,L3,13,Host,http://developer.android.com/guide/topics/connectivity/usb/host.html</item>
+		<item>16,L2,1,SIP,http://developer.android.com/guide/topics/connectivity/sip.html</item>
+    </string-array>    
+    
+    <string-array name="array9">
+        <item>1,L1,0,Text and Input,http://developer.android.com/guide/topics/text/index.html</item>
+        <item>2,L2,1,Copy and Paste,http://developer.android.com/guide/topics/text/copy-paste.html</item>
+        <item>3,L2,1,Creating an IME,http://developer.android.com/guide/topics/text/creating-input-method.html</item>
+        <item>4,L2,1,Spelling Checker,http://developer.android.com/guide/topics/text/spell-checker-framework.html</item>
+    </string-array>    
+    
+    <string-array name="array10">
+        <item>1,L1,0,Data Storage,http://developer.android.com/guide/topics/data/index.html</item>
+        <item>2,L2,1,Storage Options,http://developer.android.com/guide/topics/data/data-storage.html</item>
+        <item>3,L2,1,Data Backup,http://developer.android.com/guide/topics/data/backup.html</item>
+        <item>4,L2,1,App Install Location,http://developer.android.com/guide/topics/data/install-location.html</item>
+    </string-array>
+    
+    <string-array name="array11">
+        <item>1,L1,0,Administration,http://developer.android.com/guide/topics/admin/index.html</item>
+        <item>2,L2,1,Device Administration,http://developer.android.com/guide/topics/admin/device-admin.html</item>
+    </string-array>    
+    
+    <string-array name="array12">
+        <item>1,L1,0,Web Apps,http://developer.android.com/guide/webapps/index.html</item>
+        <item>2,L2,1,Supporting Different Screens in Web Apps,http://developer.android.com/guide/webapps/targeting.html</item>
+        <item>3,L2,1,Building Web Apps in WebView,http://developer.android.com/guide/webapps/webview.html</item>
+        <item>4,L2,1,Migrating to WebView in Android 4.4,http://developer.android.com/guide/webapps/migrating.html</item>    
+        <item>5,L2,1,Debugging Web Apps,http://developer.android.com/guide/webapps/debugging.html</item>
+        <item>6,L2,1,Best Practices for Web Apps,http://developer.android.com/guide/webapps/best-practices.html</item> 
+    </string-array>
+    
+    <string-array name="array13">
+        <item>1,L1,0,Best Practices,http://developer.android.com/guide/practices/index.html</item>
+        <item>2,L2,1,Compatibility,http://developer.android.com/guide/practices/compatibility.html</item>
+        <item>3,L2,1,Supporting Multiple Screens,http://developer.android.com/guide/practices/screens_support.html</item>
+        	<item>4,L3,3,Distributing to Specific Screens,http://developer.android.com/guide/practices/screens-distribution.html</item>
+			<item>5,L3,3,Screen Compatibility Mode,http://developer.android.com/guide/practices/screen-compat-mode.html</item> 
+    	<item>6,L2,1,Supporting Tablets and Handsets,http://developer.android.com/guide/practices/tablets-and-handsets.html</item>
+    </string-array>
+</resources>

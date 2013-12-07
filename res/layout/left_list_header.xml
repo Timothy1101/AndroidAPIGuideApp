@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+<!--     <EditText
+        android:id="@+id/searchET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/left_title_et_hint"
+        android:ems="10" >
+        <requestFocus /> 
+    </EditText> -->
+	<TableRow
+	   android:layout_width="match_parent" 
+	   android:layout_height="48dp"
+	   android:gravity="center">
+	     
+	     <TextView
+	        android:id="@+id/indexTV"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_vertical|center_horizontal"
+	        android:gravity="center"
+	        android:text="@string/left_title"
+	        android:textColor="@color/black"
+	        android:textSize="16sp" />
+	
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/arrow_48" />	    
+	</TableRow>
+
+    
+</LinearLayout>

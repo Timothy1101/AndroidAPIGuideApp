@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contents>
+     <!-- App Fundamentals(1 - 10) -->
+     <content>
+   		<index>1</index>
+   		<name>App Components</name>
+   		<url>http://developer.android.com/guide/components/index.html</url>
+   		<type>M</type>
+   		<mIndex>1</mIndex>   
+     </content>
+     <content>
+   		<index>2</index>
+   		<name>App Fundamentals</name> 
+   		<url>http://developer.android.com/guide/components/index.html</url>
+   		<type>S</type>
+   		<mIndex>1</mIndex>   
+     </content>
+     <content>
+   		<index>3</index>
+   		<name>Activities</name> 
+   		<url>http://developer.android.com/guide/components/activities.html</url>
+   		<type>S</type>   
+   		<mIndex>1</mIndex>
+   		<child_contents>
+   		    <child_content>
+   		        <child_name>Fragments</child_name>
+   		        <child_url>http://developer.android.com/guide/components/fragments.html</child_url>
+   		    </child_content>
+   		    <child_content>
+   		        <child_name>Loaders</child_name>
+   		        <child_url>http://developer.android.com/guide/components/loaders.html</child_url>
+   		    </child_content>
+   		    <child_content>
+   		        <child_name>Tasks and Back Stack</child_name>
+   		        <child_url>http://developer.android.com/guide/components/tasks-and-back-stack.html</child_url>
+   		    </child_content>
+   		</child_contents>
+     </content>
+     <content>
+   		<index>4</index>
+   		<name>Services</name>
+   		<url>http://developer.android.com/guide/components/services.html</url>
+   		<type>S</type>
+   		<mIndex>1</mIndex>  
+     </content>
+     <content>
+   		<index>5</index>
+   		<name>Content Providers</name> 
+   		<url>http://developer.android.com/guide/topics/providers/content-providers.html</url>
+   		<type>S</type>
+   		<mIndex>1</mIndex>   
+     </content>
+     <content>
+   		<index>6</index>
+   		<name>Intents and Intent Filters</name> 
+   		<url>http://developer.android.com/guide/components/intents-filters.html</url> 
+   		<type>S</type>  
+   		<mIndex>1</mIndex>
+     </content>
+     <content>
+   		<index>7</index>
+   		<name>Processes and Threads</name>
+   		<url>http://developer.android.com/guide/components/processes-and-threads.html</url> 
+   		<type>S</type>
+   		<mIndex>1</mIndex>  
+     </content>
+     <content>
+   		<index>8</index>
+   		<name>Permissions</name> 
+   		<url>http://developer.android.com/guide/topics/security/permissions.html</url>
+   		<type>S</type>
+   		<mIndex>1</mIndex>   
+     </content>
+     <content>
+   		<index>9</index>
+   		<name>App Widgets</name> 
+   		<url>http://developer.android.com/guide/topics/appwidgets/index.html</url>
+   		<type>S</type>   
+   		<mIndex>1</mIndex>
+     </content>
+     <content>
+   		<index>10</index>
+   		<name>Android Manifest</name>
+   		<url>http://developer.android.com/guide/topics/manifest/manifest-intro.html</url>
+   		<type>S</type> 
+   		<mIndex>1</mIndex>  
+     </content>
+     
+     
+     <!-- User Interface(11 - 26) -->
+     <content>
+   		<index>11</index>
+   		<name>User Interface</name>
+   		<url>http://developer.android.com/guide/topics/ui/index.html</url> 
+   		<type>M</type>
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>12</index>
+   		<name>Overview</name> 
+   		<url>http://developer.android.com/guide/topics/ui/overview.html</url>
+   		<type>S</type>
+   		<mIndex>11</mIndex>   
+     </content>
+     <content>
+   		<index>13</index>
+   		<name>Layouts</name> 
+   		<url>http://developer.android.com/guide/topics/ui/declaring-layout.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>14</index>
+   		<name>Input Controls</name> 
+   		<url>http://developer.android.com/guide/topics/ui/controls.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>15</index>
+   		<name>Input Events</name> 
+   		<url>http://developer.android.com/guide/topics/ui/ui-events.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>16</index>
+   		<name>Menus</name> 
+   		<url>http://developer.android.com/guide/topics/ui/menus.html</url> 
+   		<type>S</type>
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>17</index>
+   		<name>Action Bar</name> 
+   		<url>http://developer.android.com/guide/topics/ui/actionbar.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>18</index>
+   		<name>Settings</name> 
+   		<url>http://developer.android.com/guide/topics/ui/settings.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>19</index>
+   		<name>Dialogs</name> 
+   		<url>http://developer.android.com/guide/topics/ui/dialogs.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>20</index>
+   		<name>Notifications</name> 
+   		<url>http://developer.android.com/guide/topics/ui/notifiers/notifications.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>21</index>
+   		<name>Toasts</name> 
+   		<url>http://developer.android.com/guide/topics/ui/notifiers/toasts.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>22</index>
+   		<name>Search</name> 
+   		<url>http://developer.android.com/guide/topics/search/index.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>23</index>
+   		<name>Drag and Drop</name> 
+   		<url>http://developer.android.com/guide/topics/ui/drag-drop.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>24</index>
+   		<name>Accessibility</name> 
+   		<url>http://developer.android.com/guide/topics/ui/actionbar.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>25</index>
+   		<name>Styles and Themes</name> 
+   		<url>http://developer.android.com/guide/topics/ui/themes.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <content>
+   		<index>26</index>
+   		<name>Custom Components</name> 
+   		<url>http://developer.android.com/guide/topics/ui/accessibility/index.html</url>
+   		<type>S</type> 
+   		<mIndex>11</mIndex>  
+     </content>
+     <!-- App Fundamentals(11 - 26) End-->
+     
+      <!-- App Resources(27 - 33) -->
+     <content>
+   		<index>27</index>
+   		<name>App Resources</name>
+   		<url>http://developer.android.com/guide/topics/resources/index.html</url> 
+   		<type>M</type>
+   		<mIndex>27</mIndex>  
+     </content>
+     <content>
+   		<index>28</index>
+   		<name>Overview</name> 
+   		<url>http://developer.android.com/guide/topics/resources/overview.html</url>
+   		<type>S</type>
+   		<mIndex>27</mIndex>   
+     </content>
+     <content>
+   		<index>29</index>
+   		<name>Providing Resources</name> 
+   		<url>http://developer.android.com/guide/topics/resources/providing-resources.html</url>
+   		<type>S</type> 
+   		<mIndex>27</mIndex>  
+     </content>
+     <content>
+   		<index>30</index>
+   		<name>Accessing Resources</name> 
+   		<url>http://developer.android.com/guide/topics/resources/accessing-resources.html</url> 
+   		<type>S</type>
+   		<mIndex>27</mIndex>  
+     </content>
+     <content>
+   		<index>31</index>
+   		<name>Handling Runtime Changes</name> 
+   		<url>http://developer.android.com/guide/topics/resources/runtime-changes.html</url>
+   		<type>S</type> 
+   		<mIndex>27</mIndex>  
+     </content>
+     <content>
+   		<index>32</index>
+   		<name>Localizing</name> 
+   		<url>http://developer.android.com/guide/topics/resources/localization.html</url>
+   		<type>S</type> 
+   		<mIndex>27</mIndex>  
+     </content>
+     <content>
+   		<index>33</index>
+   		<name>Resource Types</name> 
+   		<url>http://developer.android.com/guide/topics/resources/available-resources.html</url>
+   		<type>S</type> 
+   		<mIndex>27</mIndex>  
+     </content>
+
+     <!-- Animation and Graphics(34 - 37) -->
+     <content>
+   		<index>34</index>
+   		<name>Animation and Graphics</name>
+   		<url>http://developer.android.com/guide/topics/graphics/index.html</url>
+   		<type>M</type> 
+   		<mIndex>34</mIndex>  
+     </content>
+     <content>
+   		<index>35</index>
+   		<name>Overview</name> 
+   		<url>http://developer.android.com/guide/topics/graphics/overview.html</url>
+   		<type>S</type>
+   		<mIndex>34</mIndex>   
+     </content>
+     <content>
+   		<index>36</index>
+   		<name>Property Animation</name> 
+   		<url>http://developer.android.com/guide/topics/graphics/prop-animation.html</url>
+   		<type>S</type> 
+   		<mIndex>34</mIndex>  
+     </content>
+     <content>
+   		<index>37</index>
+   		<name>View Animation</name> 
+   		<url>http://developer.android.com/guide/topics/graphics/view-animation.html</url>
+   		<type>S</type> 
+   		<mIndex>34</mIndex>  
+     </content>
+     <content>
+   		<index>38</index>
+   		<name>Drawable Animation</name>
+   		<url>http://developer.android.com/guide/topics/graphics/drawable-animation.html</url>
+   		<type>S</type> 
+   		<mIndex>34</mIndex>  
+     </content>
+     <content>
+   		<index>39</index>
+   		<name>Canvas and Drawables</name> 
+   		<url>http://developer.android.com/guide/topics/graphics/2d-graphics.html</url>
+   		<type>S</type>
+   		<mIndex>34</mIndex>   
+     </content>
+     <content>
+   		<index>40</index>
+   		<name>OpenGL ES</name> 
+   		<url>http://developer.android.com/guide/topics/graphics/opengl.html</url>
+   		<type>S</type> 
+   		<mIndex>34</mIndex>  
+     </content>
+     <content>
+   		<index>41</index>
+   		<name>Hardware Acceleration</name> 
+   		<url>http://developer.android.com/guide/topics/graphics/hardware-accel.html</url>
+   		<type>S</type> 
+   		<mIndex>34</mIndex>  
+     </content>
+          
+    <!-- Computation(34 - 37) -->
+     <content>
+   		<index>42</index>
+   		<name>Computation</name>
+   		<url>http://developer.android.com/guide/topics/renderscript/index.html</url>
+   		<type>M</type> 
+   		<mIndex>42</mIndex>  
+     </content>
+     <content>
+   		<index>43</index>
+   		<name>RenderScript</name> 
+   		<url>http://developer.android.com/guide/topics/renderscript/compute.html</url>
+   		<type>S</type>
+   		<mIndex>42</mIndex>   
+     </content>
+     <content>
+   		<index>44</index>
+   		<name>Advanced RenderScript</name> 
+   		<url>http://developer.android.com/guide/topics/renderscript/advanced.html</url>
+   		<type>S</type> 
+   		<mIndex>42</mIndex>  
+     </content>
+     <content>
+   		<index>45</index>
+   		<name>Runtime API Reference</name> 
+   		<url>http://developer.android.com/guide/topics/renderscript/reference.html</url>
+   		<type>S</type> 
+   		<mIndex>42</mIndex>  
+     </content>
+ 
+     <!-- Media and Camera (46 - 51) -->
+     <content>
+   		<index>46</index>
+   		<name>Media and Camera</name>
+   		<url>http://developer.android.com/guide/topics/media/index.html</url>
+   		<type>M</type> 
+   		<mIndex>46</mIndex>  
+     </content>
+     <content>
+   		<index>47</index>
+   		<name>Media Playback</name> 
+   		<url>http://developer.android.com/guide/topics/media/mediaplayer.html</url>
+   		<type>S</type>
+   		<mIndex>46</mIndex>   
+     </content>
+     <content>
+   		<index>48</index>
+   		<name>Supported Media Formats</name> 
+   		<url>http://developer.android.com/guide/appendix/media-formats.html</url>
+   		<type>S</type> 
+   		<mIndex>46</mIndex>  
+     </content>
+     <content>
+   		<index>49</index>
+   		<name>Audio Capture</name> 
+   		<url>http://developer.android.com/guide/topics/media/audio-capture.html</url>
+   		<type>S</type> 
+   		<mIndex>46</mIndex>  
+     </content>
+     <content>
+     	<index>50</index>
+   		<name>JetPlayer</name> 
+   		<url>http://developer.android.com/guide/topics/media/jetplayer.html</url>
+   		<type>S</type> 
+   		<mIndex>46</mIndex>  
+     </content>
+     <content>
+   		<index>51</index>
+   		<name>Camera</name> 
+   		<url>http://developer.android.com/guide/topics/media/camera.html</url>
+   		<type>S</type> 
+   		<mIndex>46</mIndex>  
+     </content>
+     
+     <!-- Location and Sensors APIs (52 - 58) -->
+     <content>
+   		<index>52</index>
+   		<name>Location and Sensors APIs</name>
+   		<url>http://developer.android.com/guide/topics/sensors/index.html</url>
+   		<type>M</type> 
+   		<mIndex>52</mIndex>  
+     </content>
+     <content>
+   		<index>53</index>
+   		<name>Location and Maps</name> 
+   		<url>http://developer.android.com/guide/topics/location/index.html</url>
+   		<type>S</type>
+   		<mIndex>52</mIndex>   
+     </content>
+     <content>
+   		<index>54</index>
+   		<name>Location Strategies</name> 
+   		<url>http://developer.android.com/guide/topics/location/strategies.html</url>
+   		<type>S</type> 
+   		<mIndex>52</mIndex>  
+     </content>
+     <content>
+   		<index>55</index>
+   		<name>Sensors Overview</name> 
+   		<url>http://developer.android.com/guide/topics/sensors/sensors_overview.html</url>
+   		<type>S</type> 
+   		<mIndex>52</mIndex>  
+     </content>
+     <content>
+     	<index>56</index>
+   		<name>Motion Sensors</name> 
+   		<url>http://developer.android.com/guide/topics/sensors/sensors_motion.html</url>
+   		<type>S</type> 
+   		<mIndex>52</mIndex>  
+     </content>
+     <content>
+   		<index>57</index>
+   		<name>Position Sensors</name> 
+   		<url>http://developer.android.com/guide/topics/sensors/sensors_position.html</url>
+   		<type>S</type> 
+   		<mIndex>52</mIndex>  
+     </content>
+     <content>
+   		<index>58</index>
+   		<name>Environment Sensors</name> 
+   		<url>http://developer.android.com/guide/topics/sensors/sensors_environment.html</url>
+   		<type>S</type> 
+   		<mIndex>52</mIndex>  
+     </content>
+     
+     <!-- Connectivity (59 - 64) -->
+     <content>
+   		<index>59</index>
+   		<name>Connectivity</name>
+   		<url>http://developer.android.com/guide/topics/connectivity/bluetooth.html</url>
+   		<type>M</type> 
+   		<mIndex>59</mIndex>  
+     </content>
+     <content>
+   		<index>60</index>
+   		<name>Bluetooth</name> 
+   		<url>http://developer.android.com/guide/topics/connectivity/bluetooth.html</url>
+   		<type>S</type>
+   		<mIndex>59</mIndex>   
+     </content>
+     <content>
+   		<index>61</index>
+   		<name>NFC</name> 
+   		<url>http://developer.android.com/guide/topics/connectivity/nfc/index.html</url>
+   		<type>S</type> 
+   		<mIndex>59</mIndex>  
+     </content>
+     <content>
+   		<index>62</index>
+   		<name>WIFI-P2P</name> 
+   		<url>http://developer.android.com/guide/topics/connectivity/wifip2p.html</url>
+   		<type>S</type> 
+   		<mIndex>59</mIndex>  
+     </content>
+     <content>
+     	<index>63</index>
+   		<name>USB</name> 
+   		<url>http://developer.android.com/guide/topics/connectivity/usb/index.html</url>
+   		<type>S</type> 
+   		<mIndex>59</mIndex>  
+     </content>
+     <content>
+   		<index>64</index>
+   		<name>SIP</name> 
+   		<url>http://developer.android.com/guide/topics/connectivity/sip.html</url>
+   		<type>S</type> 
+   		<mIndex>59</mIndex>  
+     </content>
+     
+ 	 <!-- Text and Input (65 - 68) -->
+     <content>
+   		<index>65</index>
+   		<name>Text and Input</name>
+   		<url>http://developer.android.com/guide/topics/text/index.html</url>
+   		<type>M</type> 
+   		<mIndex>65</mIndex>  
+     </content>
+     <content>
+   		<index>66</index>
+   		<name>Copy and Paste</name> 
+   		<url>http://developer.android.com/guide/topics/text/copy-paste.html</url>
+   		<type>S</type>
+   		<mIndex>65</mIndex>   
+     </content>
+     <content>
+   		<index>67</index>
+   		<name>Creating an IME</name> 
+   		<url>http://developer.android.com/guide/topics/text/creating-input-method.html</url>
+   		<type>S</type> 
+   		<mIndex>65</mIndex>  
+     </content>
+     <content>
+   		<index>68</index>
+   		<name>Spelling Checker</name> 
+   		<url>http://developer.android.com/guide/topics/text/spell-checker-framework.html</url>
+   		<type>S</type> 
+   		<mIndex>65</mIndex>  
+     </content>
+     
+      <!-- Data Storage (69 - 72) -->
+     <content>
+   		<index>69</index>
+   		<name>Data Storage</name>
+   		<url>http://developer.android.com/guide/topics/data/index.html</url>
+   		<type>M</type> 
+   		<mIndex>69</mIndex>  
+     </content>
+     <content>
+   		<index>70</index>
+   		<name>Storage Options</name> 
+   		<url>http://developer.android.com/guide/topics/data/data-storage.html</url>
+   		<type>S</type>
+   		<mIndex>69</mIndex>   
+     </content>
+     <content>
+   		<index>71</index>
+   		<name>Data Backup</name> 
+   		<url>http://developer.android.com/guide/topics/data/backup.html</url>
+   		<type>S</type> 
+   		<mIndex>69</mIndex>  
+     </content>
+     <content>
+   		<index>72</index>
+   		<name>App Install Location</name> 
+   		<url>http://developer.android.com/guide/topics/data/install-location.html</url>
+   		<type>S</type> 
+   		<mIndex>69</mIndex>  
+     </content>
+     
+      <!-- Administration(65 - 68) -->
+     <content>
+   		<index>73</index>
+   		<name>Administration</name>
+   		<url>http://developer.android.com/guide/topics/admin/index.html</url>
+   		<type>M</type> 
+   		<mIndex>73</mIndex>  
+     </content>
+     <content>
+   		<index>74</index>
+   		<name>Device Policies</name> 
+   		<url>http://developer.android.com/guide/topics/admin/device-admin.html</url>
+   		<type>S</type>
+   		<mIndex>73</mIndex>   
+     </content>
+     
+     <!-- Web Apps (75 - 81) -->
+     <content>
+   		<index>75</index>
+   		<name>Web Apps</name>
+   		<url>http://developer.android.com/guide/webapps/index.html</url>
+   		<type>M</type> 
+   		<mIndex>75</mIndex>  
+     </content>
+     <content>
+   		<index>76</index>
+   		<name>Web Apps Overview</name> 
+   		<url>http://developer.android.com/guide/webapps/overview.html</url>
+   		<type>S</type>
+   		<mIndex>75</mIndex>   
+     </content>
+     <content>
+   		<index>77</index>
+   		<name>Targeting Screens from Web Apps</name> 
+   		<url>http://developer.android.com/guide/webapps/targeting.html</url>
+   		<type>S</type> 
+   		<mIndex>75</mIndex>  
+     </content>
+     <content>
+   		<index>78</index>
+   		<name>Building Web Apps in WebView</name> 
+   		<url>http://developer.android.com/guide/webapps/webview.html</url>
+   		<type>S</type> 
+   		<mIndex>75</mIndex>  
+     </content>
+     <content>
+   		<index>79</index>
+   		<name>Debugging Web Apps</name> 
+   		<url>http://developer.android.com/guide/webapps/debugging.html</url>
+   		<type>S</type> 
+   		<mIndex>75</mIndex>  
+     </content>
+     <content>
+   		<index>80</index>
+   		<name>Best Practices for Web Apps</name> 
+   		<url>http://developer.android.com/guide/webapps/best-practices.html</url>
+   		<type>S</type> 
+   		<mIndex>75</mIndex>  
+     </content> 
+     
+     <!-- Best Practices (81 - 84) -->
+     <content>
+   		<index>81</index>
+   		<name>Best Practices</name>
+   		<url>http://developer.android.com/guide/practices/index.html</url>
+   		<type>M</type> 
+   		<mIndex>81</mIndex>  
+     </content>
+     <content>
+   		<index>82</index>
+   		<name>Android Compatibility</name> 
+   		<url>http://developer.android.com/guide/practices/compatibility.html</url>
+   		<type>S</type>
+   		<mIndex>81</mIndex>   
+     </content>
+     <content>
+   		<index>82</index>
+   		<name>Supporting Multiple Screens</name> 
+   		<url>http://developer.android.com/guide/practices/screens_support.html</url>
+   		<type>S</type> 
+   		<mIndex>81</mIndex>  
+     </content>
+     <content>
+   		<index>84</index>
+   		<name>Supporting Tablets and Handsets</name> 
+   		<url>http://developer.android.com/guide/practices/tablets-and-handsets.html</url>
+   		<type>S</type> 
+   		<mIndex>81</mIndex>  
+     </content>
+</contents>

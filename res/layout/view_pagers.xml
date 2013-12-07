@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/view_pagers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:id="@+id/head_layout"
+        android:background="@color/header_color">
+
+        <ImageView
+            android:id="@+id/showLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/menu_48"
+            android:contentDescription="menu"/>
+        
+        <ImageView
+            android:id="@+id/showRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/setting_48" 
+            android:contentDescription="setting"/>
+                
+        <TextView
+	        android:id="@+id/titleTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_toLeftOf="@id/showRight"
+	        android:layout_toRightOf="@id/showLeft"
+	        android:textSize="18sp"
+	        android:textColor="@color/white"
+	        android:gravity="center" />
+
+    </RelativeLayout>
+
+      <FrameLayout android:id="@+id/PageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head_layout">
+        
+	  	<android.support.v4.view.ViewPager
+	        android:id="@+id/pager"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        android:layout_marginBottom="65dp">
+	    </android.support.v4.view.ViewPager>
+	    
+	    <ProgressBar android:id="@+id/loading_spinner"
+	        style="?android:progressBarStyle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:indeterminateDrawable="@drawable/loading_progress" 
+	        android:visibility="invisible">
+	    </ProgressBar>
+	    
+    	<com.google.ads.AdView
+    	    android:id="@+id/adView"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="bottom|center_horizontal"
+    	    android:layout_marginBottom="2dp"
+    	    ads:adSize="BANNER"
+    	    ads:adUnitId="a1525d603961c6c"
+    	    ads:loadAdOnCreate="true"
+    	    android:clipToPadding="true"
+    	    android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/closeAD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+	    </com.google.ads.AdView> 
+    </FrameLayout> 
+
+<!-- 	<TableRow 	        
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/PageView">
+	   	<com.google.ads.AdView
+	           android:id="@+id/adView"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           ads:adSize="BANNER"
+	           ads:adUnitId="a1525d603961c6c"
+	           ads:loadAdOnCreate="true" />  	    
+	</TableRow>   -->  
+
+    
+</RelativeLayout>
