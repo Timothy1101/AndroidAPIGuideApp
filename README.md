@@ -1,8 +1,8 @@
 SlidingMenu
 ===========
 
-SlidingMenu like Facebook and Path 2.0,This is an original component demo, does not rely on any third-party lib library, anyone who like it can download！
-这是一个原创的组件demo,不依赖任何第三方lib库,喜欢的同学可以自行下载。
+Android API Guide is an application which can read or download Android official guide from site:
+http://developer.android.com/guide/components/index.html
 
 License
 ===========
