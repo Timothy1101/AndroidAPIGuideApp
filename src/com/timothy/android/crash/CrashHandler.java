@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.timothy.android.apiguide.ActivityManage;
+import com.timothy.android.api.activity.ActivityManage;
 
 import android.content.Context;
 import android.content.Intent;

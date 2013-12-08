@@ -1,40 +1,32 @@
 package com.timothy.android.api.adapter;
 
 import java.io.File;
-import java.util.List;
-
-import com.timothy.android.api.bean.ContentBean;
-import com.timothy.android.apiguide.R;
-import com.timothy.android.apiguide.SlidingActivity;
-import com.timothy.util.SPUtil;
-import com.timothy.util.StringUtil;
-import com.timothy.util.XMLParserUtil;
+import com.timothy.android.api.activity.R;
+import com.timothy.android.api.activity.SlidingActivity;
+import com.timothy.android.uil.SPUtil;
+import com.timothy.android.uil.StringUtil;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-@Deprecated
 public class LeftListAdapter extends BaseAdapter{
 
-	public static final String LOG_TAG = "LeftListAdapter";
+	public static final String LOG_TAG = "LeftListAdapter2";
 	
 	private Context mContext;
-	private List<ContentBean> sbList;
-	private int index;
+//	private List<ContentBean> sbList;
+	private String[] filteredContents;
+	private int currId;
 	private LayoutInflater mInflater;
-//	private String appPath;
-
 	SharedPreferences sp;
 	
 	static class ViewHolder{
@@ -43,18 +35,18 @@ public class LeftListAdapter extends BaseAdapter{
 		public ImageView downloadFlag;
 	}
 
-	public LeftListAdapter(Context context, List<ContentBean> sbList,int index) {
+	public LeftListAdapter(Context context, String[] filteredContents,int currId) {
 		this.mContext = context;
 		mInflater = LayoutInflater.from(context); 
-		this.sbList = sbList;
-		this.index = index;
+		this.filteredContents = filteredContents;
+		this.currId = currId;
 		sp = context.getSharedPreferences("AndroidAPISP",0);
 	}
 
 	
 	@Override
 	public int getCount() {
-		return sbList.size();
+		return filteredContents.length;
 	}
 
 	@Override
@@ -83,42 +75,26 @@ public class LeftListAdapter extends BaseAdapter{
             holder = (ViewHolder) convertView.getTag();  
         }
 
-        final ContentBean bean = sbList.get(position);
-        ContentBean mBean = XMLParserUtil.getContentByIndex(mContext,bean.getmIndex());
+        String contents = filteredContents[position];
+        String[] contentArray = contents.split(",");
+        String contentId = contentArray[0];
+        String contentLevel = contentArray[1];
+        String contentSuperId = contentArray[2];
+        String contentName = contentArray[3];
+        String contentURL = contentArray[4];
         
-        Log.i(LOG_TAG,bean.toString());
-		holder.title.setText(bean.getName());
-		
-		boolean openFlag = SPUtil.getBooleanFromSP(SPUtil.SP_KEY_OPEN_FLAG, sp);
-		int mIndex = SPUtil.getIntegerFromSP(SPUtil.SP_KEY_MCONTENT_INDEX, sp);
-		
-		Log.i(LOG_TAG, "openFlag:" + openFlag);
-		Log.i(LOG_TAG, "mIndex:" + mIndex);
-		
-		if(bean.getType().equalsIgnoreCase("M")){
-			holder.title.setTypeface(null,Typeface.BOLD);
-			Log.i(LOG_TAG, "bean.getmIndex():" + bean.getmIndex());
-			if(openFlag && mIndex == bean.getmIndex()){
-				Log.i(LOG_TAG, "-------set open--------");
-//				holder.openImg.setBackgroundResource(R.drawable.open_32);
-				holder.openImg.setBackgroundResource(R.drawable.disclosure_up2);
-
-			}else{
-				Log.i(LOG_TAG, "-------set close--------");
-//				holder.openImg.setBackgroundResource(R.drawable.close_32);
-				holder.openImg.setBackgroundResource(R.drawable.disclosure_down2);
-
-			}
-			holder.openImg.setVisibility(View.VISIBLE);
-			
-		}else{
-			holder.title.setTypeface(null,Typeface.NORMAL);
+        //set image
+		if(contentLevel.equalsIgnoreCase("L1")){
+			holder.openImg.setBackgroundResource(R.drawable.disclosure_up2);
+		}else if(contentLevel.equalsIgnoreCase("L2")) {
+			holder.openImg.setBackgroundResource(R.drawable.disclosure_down2);
+		}else if(contentLevel.equalsIgnoreCase("L3")) {
 			holder.openImg.setBackgroundResource(R.drawable.bullet_48);
-//			holder.openImg.setVisibility(View.INVISIBLE);
 		}
 		
-		
-		if(bean.getIndex() == index){
+		//set title
+		holder.title.setText(contentName);
+		if(Integer.valueOf(contentId) == currId){
 			convertView.setBackgroundColor(Color.parseColor("#FCFCFC"));
 			holder.title.setTextColor(Color.parseColor("#307FC4"));
 		}else{
@@ -126,54 +102,30 @@ public class LeftListAdapter extends BaseAdapter{
 			holder.title.setTextColor(Color.parseColor("#000000"));
 		}
 		
+		String branchName = SPUtil.getFromSP(SPUtil.BRANCH_PATH_NAME, sp);
 		String appPath = SPUtil.getFromSP(SPUtil.APP_HOME_PATH, sp);
-		String contentPath = appPath +  File.separator + StringUtil.rmvSpace(mBean.getName()) +  File.separator + StringUtil.rmvSpace(bean.getName()) +".xml";
-//		Log.i(LOG_TAG,"contentPath:"+contentPath);
-		
+		String contentPath = appPath +  File.separator + StringUtil.rmvSpace(branchName) +  File.separator + StringUtil.rmvSpace(contentName) +".xml";
+		//set download flag
 		if(new File(contentPath).exists()){
 			holder.downloadFlag.setBackgroundResource(R.drawable.view_content_32);
 		}else{
 			holder.downloadFlag.setBackgroundResource(R.drawable.downloaded_32);
 		}
-		
-		if(openFlag){
-			holder.downloadFlag.setOnClickListener(new View.OnClickListener() {
-				@Override
-				public void onClick(View v) {
-					SPUtil.save2SP(SPUtil.SP_KEY_MCONTENT_INDEX, bean.getmIndex(), sp);
-					SPUtil.save2SP(SPUtil.SP_KEY_SCONTENT_INDEX, bean.getIndex(), sp);
-					refreshActivity();
-				}
-			});			
-		}
-		
-//		if(openFlag && bean.getType().equalsIgnoreCase("M")){
-//			holder.downloadFlag.setOnClickListener(new View.OnClickListener() {
-//				@Override
-//				public void onClick(View v) {
-//					SPUtil.save2SP(SPUtil.SP_KEY_MCONTENT_INDEX, bean.getmIndex(), sp);
-//					SPUtil.save2SP(SPUtil.SP_KEY_SCONTENT_INDEX, bean.getIndex(), sp);
-//					refreshActivity();
-//				}
-//			});			
-//		}
         return convertView; 
-        
 	}
 	
-	public void getList(){
-		
-	}
 	
-	public void refreshList(int mIndex,boolean openFlag){
-		if(openFlag){
-			sbList = XMLParserUtil.getContentsByMIndex(mContext,mIndex);
-		}else{
-			sbList = XMLParserUtil.getContentsByMIndex(mContext,-1);
-		}
-		this.notifyDataSetChanged();
-	}
 	
+	public void setFilteredContents(String[] filteredContents) {
+		this.filteredContents = filteredContents;
+	}
+
+
+	public void setCurrId(int currId) {
+		this.currId = currId;
+	}
+
+
 	public void refreshActivity(){
         Intent intent = new Intent();
         intent.setClass(mContext, SlidingActivity.class);

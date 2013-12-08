@@ -1,6 +1,6 @@
 package com.timothy.android.api.custom;
 
-import com.timothy.android.apiguide.R;
+import com.timothy.android.api.activity.R;
 
 import android.app.ProgressDialog;
 import android.content.Context;
