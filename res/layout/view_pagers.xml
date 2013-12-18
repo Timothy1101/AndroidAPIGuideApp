@@ -21,7 +21,7 @@
             android:layout_margin="3dp"
             android:paddingTop="5dp"
             android:layout_alignParentLeft="true"
-            android:src="@drawable/menu_48"
+            android:src="@drawable/ic_action_back"
             android:contentDescription="menu"/>
         
         <ImageView
@@ -31,7 +31,7 @@
             android:layout_margin="3dp"
             android:paddingTop="5dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/setting_48" 
+            android:src="@drawable/ic_action_overflow" 
             android:contentDescription="setting"/>
                 
         <TextView

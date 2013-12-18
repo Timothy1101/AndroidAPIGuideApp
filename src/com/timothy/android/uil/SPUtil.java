@@ -1,18 +1,14 @@
 package com.timothy.android.uil;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
 import android.content.SharedPreferences;
-import android.util.Log;
 
 public class SPUtil {
 
 	public final static String LOG_TAG = "SPUtil";
 
 	// login infor key
-	public final static String SP_KEY_MCONTENT_INDEX = "sp_key_mcontent_index";
-	public final static String SP_KEY_SCONTENT_INDEX = "sp_key_scontent_index";
+//	public final static String SP_KEY_MCONTENT_INDEX = "sp_key_mcontent_index";
+//	public final static String SP_KEY_SCONTENT_INDEX = "sp_key_scontent_index";
 	public final static String SP_KEY_PAGE_INDEX = "sp_key_page_index";
 	public final static String SP_KEY_READ_TIME = "sp_key_read_time";
 	

@@ -20,7 +20,7 @@ import android.widget.TextView;
 
 public class LeftListAdapter extends BaseAdapter{
 
-	public static final String LOG_TAG = "LeftListAdapter2";
+	public static final String LOG_TAG = "LeftListAdapter";
 	
 	private Context mContext;
 //	private List<ContentBean> sbList;
@@ -87,7 +87,8 @@ public class LeftListAdapter extends BaseAdapter{
 		if(contentLevel.equalsIgnoreCase("L1")){
 			holder.openImg.setBackgroundResource(R.drawable.disclosure_up2);
 		}else if(contentLevel.equalsIgnoreCase("L2")) {
-			holder.openImg.setBackgroundResource(R.drawable.disclosure_down2);
+//			holder.openImg.setBackgroundResource(R.drawable.disclosure_down2);
+			holder.openImg.setBackgroundResource(R.drawable.ic_action_expand);
 		}else if(contentLevel.equalsIgnoreCase("L3")) {
 			holder.openImg.setBackgroundResource(R.drawable.bullet_48);
 		}
@@ -107,9 +108,13 @@ public class LeftListAdapter extends BaseAdapter{
 		String contentPath = appPath +  File.separator + StringUtil.rmvSpace(branchName) +  File.separator + StringUtil.rmvSpace(contentName) +".xml";
 		//set download flag
 		if(new File(contentPath).exists()){
-			holder.downloadFlag.setBackgroundResource(R.drawable.view_content_32);
+//			holder.downloadFlag.setBackgroundResource(R.drawable.view_content_32);
+//			holder.downloadFlag.setBackgroundResource(R.drawable.ic_action_download);
+			holder.downloadFlag.setVisibility(View.INVISIBLE);
 		}else{
-			holder.downloadFlag.setBackgroundResource(R.drawable.downloaded_32);
+//			holder.downloadFlag.setBackgroundResource(R.drawable.downloaded_32);
+			holder.downloadFlag.setBackgroundResource(R.drawable.ic_action_download);
+			holder.downloadFlag.setVisibility(View.VISIBLE);
 		}
         return convertView; 
 	}

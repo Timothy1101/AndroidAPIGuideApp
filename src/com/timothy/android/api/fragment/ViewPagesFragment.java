@@ -45,7 +45,7 @@ import com.timothy.android.uil.SPUtil;
 import com.timothy.android.uil.StringUtil;
 
 public class ViewPagesFragment extends Fragment {
-	public static final String LOG_TAG= "ViewPageFragment2";
+	public static final String LOG_TAG= "ViewPagesFragment";
 	public static final int PAGE_TEXT_LIMIT = 800;
 	public static final String XPATH= "//div[@id='jd-content']";
 	
@@ -181,6 +181,7 @@ public class ViewPagesFragment extends Fragment {
 			titleTV.setText("Error");
 		}
 		
+		//close ad
 		adView = (com.google.ads.AdView) mView.findViewById(R.id.adView);
 		closeAD = (ImageView) mView.findViewById(R.id.closeAD);
 		if(adView.getVisibility() == View.VISIBLE){
