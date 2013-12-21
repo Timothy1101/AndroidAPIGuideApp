@@ -17,7 +17,6 @@ package com.timothy.android.api.fragment;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -36,39 +35,37 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
-
 import com.timothy.android.api.adapter.LeftListAdapter;
 import com.timothy.android.api.activity.R;
 import com.timothy.android.api.activity.SlidingActivity;
 import com.timothy.android.uil.SPUtil;
 
 public class LeftFragment extends ListFragment {
-	public static final String LOG_TAG = "LeftListFragment2";
+	public static final String LOG_TAG = "LeftFragment";
 	Context mContext;
-	
 	TextView title;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.left_list, null);
+		final View view = inflater.inflate(R.layout.left_list, null);
 		title = (TextView) view.findViewById(R.id.indexTV);
-		
 		int branchIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_BRANCH_INDEX, sp);
 		if(branchIndex!=-1 && branchNames!=null){
 			title.setText(branchNames[branchIndex-1]);
 		}
-		
 		title.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				TextView tv = (TextView) arg0;
-				if(branchNames!=null && branchNames.length >0){
-					tv.getTop();
-					int y = tv.getBottom() * 3 / 2;
-					int x =tv.getLeft();
-//					int x = activity.getWindowManager().getDefaultDisplay().getWidth() / 4;
-					showPopupWindow(x, y);					
+				if(view.getVisibility() == View.VISIBLE && tv.getVisibility() == View.VISIBLE){
+					if(branchNames!=null && branchNames.length >0){
+						tv.getTop();
+						int y = tv.getBottom() * 3 / 2;
+						int x =tv.getLeft();
+//						int x = activity.getWindowManager().getDefaultDisplay().getWidth() / 4;
+						showPopupWindow(x, y);					
+					}
 				}
 			}
 		});
@@ -77,46 +74,35 @@ public class LeftFragment extends ListFragment {
 
 	SlidingActivity activity;
 	SharedPreferences sp;
-	
 	public String branchNames[] ;
 	public Map<String,String> branchNamesMap = new HashMap<String,String>();
-	
 	public String[] contentsArray;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mContext = getActivity().getApplicationContext();
 		activity = (SlidingActivity) getActivity();
 		sp = activity.getSharedPreferences("AndroidAPISP",0);
-		
 		//get branch list
 		branchNames = getResources().getStringArray(R.array.branch_array);
-		
 		int currentIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_INDEX, sp);
 		int branchIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_BRANCH_INDEX, sp);
-		
 		Log.i(LOG_TAG, "branchIndex:"+branchIndex);
 		Log.i(LOG_TAG, "currentIndex:"+currentIndex);
-		
 		contentsArray = activity.filterBranch(branchIndex);
-		
 		//set list
 		refreshList(currentIndex,contentsArray);
 	}
-	
 
 	public void onListItemClick(ListView parent, View v, int position, long id) {
 		Log.i(LOG_TAG, "onListItemClick()...");
 		Log.i(LOG_TAG, "position:"+String.valueOf(position));
-		
 		String contents = contentsArray[position];
 		Log.i(LOG_TAG, "contents:"+contents);
-		
 		String[] contentArray = contents.split(",");
-		
 		int contentId = Integer.valueOf(contentArray[0]);
 		Log.i(LOG_TAG, "contentId:"+String.valueOf(contentId));
-		
 		SPUtil.save2SP(SPUtil.CURRENT_INDEX,contentId , sp);
 		refreshActivity();
 	}
@@ -159,30 +145,10 @@ public class LeftFragment extends ListFragment {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
-				
-//				Log.i(LOG_TAG,"onItemClick()...");
-//				
-//				TextView tv = (TextView) arg1.findViewById(R.id.tv_text);
-//				String name = tv.getText().toString();
-//				String url = childValueMap.get(name);
-//				Log.i(LOG_TAG,"name:"+name);
-//				Log.i(LOG_TAG,"url:"+url);
-//				
-//				//save child info
-//				SPUtil.save2SP(SPUtil.CHILD_FLAG, "Yes", sp);
-//				SPUtil.save2SP(SPUtil.CHILD_NAME, name, sp);
-//				SPUtil.save2SP(SPUtil.CHILD_URL, url , sp);
-//				
-//				Log.i(LOG_TAG,"onItemClick() end.");
-				
-				//refreshActivity
-//				refreshActivity();
 				String[] contentsArray = activity.filterBranch(arg2+1); 
 				refreshList(1,contentsArray);
-				
 				SPUtil.save2SP(SPUtil.CURRENT_BRANCH_INDEX, arg2+1, sp);
 				title.setText(branchNames[arg2]);
-				
 				popupWindow.dismiss();
 			}
 		});

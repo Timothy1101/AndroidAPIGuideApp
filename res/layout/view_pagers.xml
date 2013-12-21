@@ -18,10 +18,9 @@
             android:id="@+id/showLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:paddingTop="5dp"
+            android:layout_margin="2dp"
             android:layout_alignParentLeft="true"
-            android:src="@drawable/ic_action_back"
+            android:src="@drawable/g_tool_box_slide_menu_switch_selector"
             android:contentDescription="menu"/>
         
         <ImageView
@@ -91,18 +90,4 @@
 	    </com.google.ads.AdView> 
     </FrameLayout> 
 
-<!-- 	<TableRow 	        
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@id/PageView">
-	   	<com.google.ads.AdView
-	           android:id="@+id/adView"
-	           android:layout_width="fill_parent"
-	           android:layout_height="wrap_content"
-	           ads:adSize="BANNER"
-	           ads:adUnitId="a1525d603961c6c"
-	           ads:loadAdOnCreate="true" />  	    
-	</TableRow>   -->  
-
-    
 </RelativeLayout>

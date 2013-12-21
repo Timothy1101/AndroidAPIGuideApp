@@ -104,8 +104,7 @@ public class SlidingMenu extends RelativeLayout {
 	}
 
 	public void setCenterView(View view) {
-		LayoutParams aboveParams = new LayoutParams(LayoutParams.FILL_PARENT,
-				LayoutParams.FILL_PARENT);
+		LayoutParams aboveParams = new LayoutParams(LayoutParams.FILL_PARENT,LayoutParams.FILL_PARENT);
 
 		LayoutParams bgParams = new LayoutParams(screenWidth, screenHeight);
 		bgParams.addRule(RelativeLayout.CENTER_IN_PARENT);

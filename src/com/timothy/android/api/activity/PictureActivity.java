@@ -10,14 +10,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import com.timothy.android.api.activity.R;
 import com.timothy.android.uil.NetWorkUtil;
-
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;

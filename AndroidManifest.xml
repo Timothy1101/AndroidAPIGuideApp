@@ -8,12 +8,10 @@
         android:minSdkVersion="7"
         android:targetSdkVersion="17" />
     
-    <!-- these permissions are for youmi advertisement -->
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"></uses-permission>
-	<!-- end -->
 	
 	<application
         android:name="com.timothy.android.crash.CrashApplication"
@@ -27,7 +25,6 @@
             android:theme="@style/MyTheme.NoTitleBar.CustomBackground" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

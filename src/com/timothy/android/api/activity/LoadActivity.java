@@ -48,9 +48,6 @@ public class LoadActivity extends Activity {
 		int branchIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_BRANCH_INDEX, sp);
 		if(branchIndex==-1) SPUtil.save2SP(SPUtil.CURRENT_BRANCH_INDEX, 1, sp);
 		
-//		SPUtil.save2SP(SPUtil.SP_KEY_REBOOT_FLAG, true, sp);
-//		SPUtil.save2SP(SPUtil.SP_KEY_SCONTENT_INDEX, -1, sp);
-		
         new Handler().postDelayed(new Runnable() {
             public void run() {
                 //Go to main activity, and finish load activity

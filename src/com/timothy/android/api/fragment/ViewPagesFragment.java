@@ -79,42 +79,37 @@ public class ViewPagesFragment extends Fragment {
     
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		
 		Log.i(LOG_TAG,"onCreateView()...");
-
 		activity = (SlidingActivity) getActivity();
 		sp = activity.getSharedPreferences("AndroidAPISP",0);
 		mContext = activity.getApplicationContext();
 		View mView = inflater.inflate(R.layout.view_pagers, null);
 		showLeft = (ImageView) mView.findViewById(R.id.showLeft);
 		titleTV = (TextView) mView.findViewById(R.id.titleTextView);
+		titleTV.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Log.i(LOG_TAG,"titleTV onclicked...");
+			}
+		});
+		
 		currentIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_INDEX, sp);
 		showRight = (ImageView) mView.findViewById(R.id.showRight);
-		
 		mPager = (ViewPager) mView.findViewById(R.id.pager);
-		
-		titleTV = (TextView) mView.findViewById(R.id.titleTextView);
 		progressBar = (ProgressBar) mView.findViewById(R.id.loading_spinner);
-		
 		if(currentIndex == -1){
 			HomeFragment homeFrag = new HomeFragment();
 			pagerItemList.add(homeFrag);
 			setAdapter();
 		}else{
-			
 			Log.i(LOG_TAG, "currentIndex:"+String.valueOf(currentIndex));
-			
 //			contentsArray = getResources().getStringArray(R.array.contents_array);
 			int branchIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_BRANCH_INDEX, sp);
 			contentsArray = activity.filterBranch(branchIndex);
-			
 			contents = ContentUtil.getContentsById(contentsArray, currentIndex);
-			
 			if(contents!=null){
 				Log.i(LOG_TAG, "contents:"+contents);
-				
 				contentArray = contents.split(",");
-				
 		        contentId = contentArray[0];
 		        contentLevel = contentArray[1];
 		        contentSuperId = contentArray[2];
@@ -124,18 +119,14 @@ public class ViewPagesFragment extends Fragment {
 				//super content
 				String superContents = ContentUtil.getSuperContentsById(contentsArray, currentIndex);
 				Log.i(LOG_TAG, "superContents:"+superContents);
-				
 //				String[] superContentArray = superContents.split(",");
-				
 				String appPath = SPUtil.getFromSP(SPUtil.APP_HOME_PATH, sp);
 				String branchName = SPUtil.getFromSP(SPUtil.BRANCH_PATH_NAME, sp);
-				
 				Log.i(LOG_TAG, "appPath:"+appPath);
 				Log.i(LOG_TAG, "branchName:"+branchName);
 				
 				//second path
 				String branchPath = appPath +  File.separator + branchName ;
-				
 				File subPathFold = new File(branchPath);
 				if(!subPathFold.isDirectory()) subPathFold.mkdir();
 				if(!subPathFold.canWrite()) subPathFold.setWritable(true);
@@ -147,12 +138,9 @@ public class ViewPagesFragment extends Fragment {
 				
 				if(new File(contentPath).exists()){
 					Log.i(LOG_TAG,"exists load local content");
-					
 					new ParseData().execute(new String[] { contentURL, contentPath , XPATH });
 				}else{
-					
 					Log.i(LOG_TAG,"not exists,should download by network");
-					
 					if(NetWorkUtil.isNetworkAvailable(mContext)){
 						if(NetWorkUtil.is3G(mContext) || NetWorkUtil.isWifi(mContext)){
 							new GetData().execute(new String[] { contentURL, contentPath , XPATH ,branchPath});

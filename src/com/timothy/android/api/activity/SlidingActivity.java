@@ -31,11 +31,11 @@ import com.timothy.android.api.view.SlidingMenu;
 public class SlidingActivity extends FragmentActivity {
 	SlidingMenu mSlidingMenu;
 	
-	LeftFragment leftListFragment2;
-	RightFragment rightFragment2;
+	LeftFragment leftFragment;
+	RightFragment rightFragment;
 	
-	ViewPagesFragment viewPageFragment2;
-	PageFragment textFragment2;
+	ViewPagesFragment viewPageFragment;
+	PageFragment textFragment;
 	
 	@Override
 	protected void onCreate(Bundle arg0) {
@@ -58,26 +58,26 @@ public class SlidingActivity extends FragmentActivity {
 
 		FragmentTransaction t = this.getSupportFragmentManager().beginTransaction();
 		
-		leftListFragment2 = new LeftFragment();
-		t.replace(R.id.left_frame, leftListFragment2);
+		leftFragment = new LeftFragment();
+		t.replace(R.id.left_frame, leftFragment);
 
-		rightFragment2 = new RightFragment();
-		t.replace(R.id.right_frame, rightFragment2);
+		rightFragment = new RightFragment();
+		t.replace(R.id.right_frame, rightFragment);
 
-		viewPageFragment2 = new ViewPagesFragment();
-		t.replace(R.id.center_frame, viewPageFragment2);
+		viewPageFragment = new ViewPagesFragment();
+		t.replace(R.id.center_frame, viewPageFragment);
 		
 		t.commit();
 		
 	}
 	
 	private void initListener() {
-		viewPageFragment2.setMyPageChangeListener(new MyPageChangeListener() {
+		viewPageFragment.setMyPageChangeListener(new MyPageChangeListener() {
 			@Override
 			public void onPageSelected(int position) {
-				if(viewPageFragment2.isFirst()){
+				if(viewPageFragment.isFirst()){
 					mSlidingMenu.setCanSliding(true,false);
-				}else if(viewPageFragment2.isEnd()){
+				}else if(viewPageFragment.isEnd()){
 					mSlidingMenu.setCanSliding(false,true);
 				}else{
 					mSlidingMenu.setCanSliding(false,false);
