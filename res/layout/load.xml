@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="60dp"
         android:src="@drawable/kk_hero"
         android:scaleType="centerInside"/>
   

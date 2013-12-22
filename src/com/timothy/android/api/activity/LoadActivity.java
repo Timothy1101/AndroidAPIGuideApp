@@ -40,7 +40,7 @@ public class LoadActivity extends Activity {
 		String appHomePath = appHome.getAbsolutePath();
 		
 		SPUtil.save2SP(SPUtil.APP_HOME_PATH, appHomePath, sp);
-		SPUtil.save2SP(SPUtil.BRANCH_PATH_NAME, "AppComponents", sp);
+//		SPUtil.save2SP(SPUtil.BRANCH_PATH_NAME, "AppComponents", sp);
 		
 		int currentIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_INDEX, sp);
 		if(currentIndex==-1) SPUtil.save2SP(SPUtil.CURRENT_INDEX, 1, sp);

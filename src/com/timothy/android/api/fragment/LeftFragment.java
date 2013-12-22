@@ -39,6 +39,7 @@ import com.timothy.android.api.adapter.LeftListAdapter;
 import com.timothy.android.api.activity.R;
 import com.timothy.android.api.activity.SlidingActivity;
 import com.timothy.android.uil.SPUtil;
+import com.timothy.android.uil.StringUtil;
 
 public class LeftFragment extends ListFragment {
 	public static final String LOG_TAG = "LeftFragment";
@@ -148,7 +149,13 @@ public class LeftFragment extends ListFragment {
 				String[] contentsArray = activity.filterBranch(arg2+1); 
 				refreshList(1,contentsArray);
 				SPUtil.save2SP(SPUtil.CURRENT_BRANCH_INDEX, arg2+1, sp);
-				title.setText(branchNames[arg2]);
+				
+				String[] branchNameArr = branchNames[arg2].split(",");
+				String branchIndex = branchNameArr[0];
+				String branchName = branchNameArr[1];
+				
+				title.setText(branchIndex+ " " + branchName);
+				SPUtil.save2SP(SPUtil.BRANCH_PATH_NAME, StringUtil.rmvSpace(branchName), sp);
 				popupWindow.dismiss();
 			}
 		});
