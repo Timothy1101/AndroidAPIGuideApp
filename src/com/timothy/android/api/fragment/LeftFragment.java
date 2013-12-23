@@ -113,7 +113,7 @@ public class LeftFragment extends ListFragment {
 			setListAdapter(new LeftListAdapter(mContext,contentsArray,currentId));
 		}else{
 			LeftListAdapter adapter = (LeftListAdapter) getListAdapter();
-			adapter.setFilteredContents(contentsArray);
+			adapter.reSetFilteredContents(contentsArray);
 			adapter.setCurrId(currentId);
 			adapter.notifyDataSetChanged();
 		}

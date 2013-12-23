@@ -128,6 +128,8 @@ public class SlidingActivity extends FragmentActivity {
 	 		case 11:contentsArray = getResources().getStringArray(R.array.array11);break;
 	 		case 12:contentsArray = getResources().getStringArray(R.array.array12);break;
 	 		case 13:contentsArray = getResources().getStringArray(R.array.array13);break;
+	 		case 14:contentsArray = getResources().getStringArray(R.array.array14);break;
+	 		case 15:contentsArray = getResources().getStringArray(R.array.array15);break;
 		}
 		return contentsArray;
 	}

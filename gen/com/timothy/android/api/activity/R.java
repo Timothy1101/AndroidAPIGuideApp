@@ -14,7 +14,11 @@ public final class R {
         public static final int array11=0x7f07000b;
         public static final int array12=0x7f07000c;
         public static final int array13=0x7f07000d;
+        public static final int array14=0x7f07000e;
+        public static final int array15=0x7f07000f;
         public static final int array2=0x7f070002;
+        /**  not checked 
+         */
         public static final int array3=0x7f070003;
         public static final int array4=0x7f070004;
         public static final int array5=0x7f070005;
@@ -62,25 +66,27 @@ public final class R {
         public static final int ic_action_download=0x7f020013;
         public static final int ic_action_expand=0x7f020014;
         public static final int ic_action_overflow=0x7f020015;
-        public static final int ic_launcher=0x7f020016;
-        public static final int kk_hero=0x7f020017;
-        public static final int left_header_style=0x7f020018;
-        public static final int line_diviver=0x7f020019;
-        public static final int loading_64=0x7f02001a;
-        public static final int loading_progress=0x7f02001b;
-        public static final int menu_48=0x7f02001c;
-        public static final int menu_64=0x7f02001d;
-        public static final int shade_bg=0x7f02001e;
-        public static final int solid_divider_ccc=0x7f02001f;
-        public static final int solid_divider_fff=0x7f020020;
-        public static final int tag_dialog_drawable=0x7f020021;
-        public static final int tag_dt_drawable=0x7f020022;
-        public static final int tag_p_drawable=0x7f020023;
-        public static final int title_item_no=0x7f020024;
-        public static final int title_item_sp=0x7f020025;
-        public static final int title_item_style=0x7f020026;
-        public static final int view_content_32=0x7f020027;
-        public static final int view_content_48=0x7f020028;
+        public static final int ic_home=0x7f020016;
+        public static final int ic_home2=0x7f020017;
+        public static final int ic_launcher=0x7f020018;
+        public static final int kk_hero=0x7f020019;
+        public static final int left_header_style=0x7f02001a;
+        public static final int line_diviver=0x7f02001b;
+        public static final int loading_64=0x7f02001c;
+        public static final int loading_progress=0x7f02001d;
+        public static final int menu_48=0x7f02001e;
+        public static final int menu_64=0x7f02001f;
+        public static final int shade_bg=0x7f020020;
+        public static final int solid_divider_ccc=0x7f020021;
+        public static final int solid_divider_fff=0x7f020022;
+        public static final int tag_dialog_drawable=0x7f020023;
+        public static final int tag_dt_drawable=0x7f020024;
+        public static final int tag_p_drawable=0x7f020025;
+        public static final int title_item_no=0x7f020026;
+        public static final int title_item_sp=0x7f020027;
+        public static final int title_item_style=0x7f020028;
+        public static final int view_content_32=0x7f020029;
+        public static final int view_content_48=0x7f02002a;
     }
     public static final class id {
         public static final int PageView=0x7f09001c;

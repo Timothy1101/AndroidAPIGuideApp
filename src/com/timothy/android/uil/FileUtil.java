@@ -27,7 +27,7 @@ public final static String LOG_TAG = "FileUtil";
 		SDPATH = Environment.getExternalStorageDirectory() + "/";
 	}
 
-	public void deleteFolder(File dir) {
+	public static void deleteFolder(File dir) {
 		File filelist[] = dir.listFiles();
 		int listlen = filelist.length;
 		for (int i = 0; i < listlen; i++) {
@@ -37,11 +37,10 @@ public final static String LOG_TAG = "FileUtil";
 				filelist[i].delete();
 			}
 		}
-		dir.delete();// ɾ��ǰĿ¼
+		dir.delete();
 	}
 
 	/**
-	 * ��SD���ϴ����ļ�
 	 * @param fileName
 	 * @return
 	 * @throws IOException

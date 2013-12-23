@@ -22,13 +22,15 @@ public class SPUtil {
 	public final static String APP_HOME_PATH = "APP_HOME_PATH";
 	public final static String BRANCH_PATH_NAME = "BRANCH_PATH_NAME";
 	
-	public final static String CHILD_FLAG = "child_flag";
-	public final static String CHILD_NAME = "child_name";
-	public final static String CHILD_URL = "child_url";
+//	public final static String CHILD_FLAG = "child_flag";
+//	public final static String CHILD_NAME = "child_name";
+//	public final static String CHILD_URL = "child_url";
 	
 	//
 	public final static String CURRENT_INDEX = "CURRENT_INDEX";
 	public final static String CURRENT_BRANCH_INDEX = "CURRENT_BRANCH_INDEX";
+	
+	public final static String CLEAR_FLAG = "CLEAR_FLAG";
 	
 	// save String to SP
 	public static void save2SP(String key, String value, SharedPreferences sp) {

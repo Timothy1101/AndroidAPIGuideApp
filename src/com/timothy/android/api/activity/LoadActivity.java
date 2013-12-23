@@ -2,6 +2,7 @@ package com.timothy.android.api.activity;
 
 import java.io.File;
 import com.timothy.android.api.activity.R;
+import com.timothy.android.uil.FileUtil;
 import com.timothy.android.uil.SPUtil;
 
 import android.app.Activity;
@@ -29,6 +30,15 @@ public class LoadActivity extends Activity {
         
         String sdPath = Environment.getExternalStorageDirectory().getAbsolutePath();
 		File appHome = new File(sdPath+ File.separator + "AndroidApiGuide"); 
+		
+		SharedPreferences sp = this.getSharedPreferences("AndroidAPISP",0);
+		
+		//remove folder first for new version
+		if(SPUtil.getFromSP(SPUtil.CLEAR_FLAG, sp) == null){
+			FileUtil.deleteFolder(appHome);
+			SPUtil.save2SP(SPUtil.CLEAR_FLAG, "YES", sp);
+		}
+		
 		if(!appHome.isDirectory()){
 			appHome.mkdir();
 		}
@@ -36,7 +46,7 @@ public class LoadActivity extends Activity {
 			appHome.setWritable(true);
 		}
 		
-		SharedPreferences sp = this.getSharedPreferences("AndroidAPISP",0);
+		
 		String appHomePath = appHome.getAbsolutePath();
 		
 		SPUtil.save2SP(SPUtil.APP_HOME_PATH, appHomePath, sp);

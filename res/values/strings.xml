@@ -22,87 +22,57 @@
 	</string>
 	<string name="contact_title">Contact</string>
 	<string name="contact">tangqi1101@gmail.com</string>
-	
-	
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
 
     <string-array name="branch_array">
-		<item>1,App Components</item>
-		<item>2,User Interface</item>
+        <item>1,Introduction</item>
+		<item>2,App Components</item>
 		<item>3,App Resources</item>
-		<item>4,Animation and Graphics</item>
-		<item>5,Computation</item>
-		<item>6,Media and Camera</item>
-		<item>7,Location and Sensors APIs</item>
-		<item>8,Connectivity</item>
-		<item>9,Text and Input</item>
-		<item>10,Data Storage</item>
-		<item>11,Administration</item>
-		<item>12,Web Apps</item>
-		<item>13,Best Practices</item>
+		<item>4,App Manifest</item>
+		<item>5,User Interface</item>
+		<item>6,Animation and Graphics</item>
+		<item>7,Computation</item>
+		<item>8,Media and Camera</item>
+		<item>9,Location and Sensors APIs</item>
+		<item>10,Connectivity</item>
+		<item>11,Text and Input</item>
+		<item>12,Data Storage</item>
+		<item>13,Administration</item>
+		<item>14,Web Apps</item>
+		<item>15,Best Practices</item>
     </string-array>
     
     <string-array name="array1">
-        <item>1,L1,0,App Components,http://developer.android.com/guide/components/index.html</item>
-        <item>2,L2,1,App Fundamentals,http://developer.android.com/guide/components/index.html</item>
-        <item>3,L2,1,Activities,http://developer.android.com/guide/components/activities.html</item>
-        <item>4,L3,3,Fragments,http://developer.android.com/guide/components/fragments.html</item>
-        <item>5,L3,3,Loaders,http://developer.android.com/guide/components/loaders.html</item>
-        <item>6,L3,3,Tasks and Back Stack,http://developer.android.com/guide/components/tasks-and-back-stack.html</item>
-        <item>7,L2,1,Services,http://developer.android.com/guide/components/services.html</item>
-        <item>8,L3,7,Bound Services,http://developer.android.com/guide/components/bound-services.html</item>
-        <item>9,L3,7,AIDL,http://developer.android.com/guide/components/aidl.html</item>
-        <item>10,L2,1,Content Providers,http://developer.android.com/guide/topics/providers/content-providers.html</item>
-        <item>11,L3,10,Content Provider Basics,http://developer.android.com/guide/topics/providers/content-provider-basics.html</item>
-        <item>12,L3,10,Creating a Content Provider,http://developer.android.com/guide/topics/providers/content-provider-creating.html</item>
-        <item>13,L3,10,Calendar Provider,http://developer.android.com/guide/topics/providers/calendar-provider.html</item>
-        <item>14,L3,10,Contacts Provider,http://developer.android.com/guide/topics/providers/contacts-provider.html</item>
-        <item>15,L3,10,Storage Access Framework,http://developer.android.com/guide/topics/providers/document-provider.html</item>
-        <item>16,L2,1,Intents and Intent Filters,http://developer.android.com/guide/components/intents-filters.html</item>
-        <item>17,L2,1,Processes and Threads,http://developer.android.com/guide/components/processes-and-threads.html</item>
-        <item>18,L2,1,Permissions,http://developer.android.com/guide/topics/security/permissions.html</item>
-        <item>19,L2,1,App Widgets,http://developer.android.com/guide/topics/appwidgets/index.html</item>
-        <item>20,L3,1,App Widget Host,http://developer.android.com/guide/topics/appwidgets/host.html</item>
+        <item>1,L1,0,Introduction,http://developer.android.com/guide/index.html</item>
+        <item>2,L2,1,App Fundamentals,http://developer.android.com/guide/components/fundamentals.html</item>
+        <item>3,L2,1,Device Compatibility,http://developer.android.com/guide/practices/compatibility.html</item>
+        <item>4,L2,1,System Permissions,http://developer.android.com/guide/topics/security/permissions.html</item>
     </string-array>
     
     <string-array name="array2">
-        <item>1,L1,0,User Interface,http://developer.android.com/guide/topics/ui/index.html</item>
-        <item>2,L2,1,Overview,http://developer.android.com/guide/topics/ui/overview.html</item>
-        <item>3,L2,1,Layouts,http://developer.android.com/guide/topics/ui/declaring-layout.html</item>      
-	        <item>4,L3,3,Linear Layout,http://developer.android.com/guide/topics/ui/layout/linear.html</item>
-	        <item>5,L3,3,Relative Layout,http://developer.android.com/guide/topics/ui/layout/relative.html</item>
-	        <item>6,L3,3,List View,http://developer.android.com/guide/topics/ui/layout/listview.html</item>
-	        <item>7,L3,3,Grid View,http://developer.android.com/guide/topics/ui/layout/gridview.html</item>
-        <item>8,L2,1,Input Controls,http://developer.android.com/guide/topics/ui/controls.html</item>
-	        <item>9,L3,8,Buttons,http://developer.android.com/guide/topics/ui/controls/text.html</item>
-	        <item>10,L3,8,Text Fields,http://developer.android.com/guide/topics/ui/controls/button.html</item>
-	        <item>11,L3,8,Checkboxes,http://developer.android.com/guide/topics/ui/controls/checkbox.html</item>
-	        <item>12,L3,8,Radio Buttons,http://developer.android.com/guide/topics/ui/controls/radiobutton.html</item>
-	        <item>13,L3,8,Toggle Buttons,http://developer.android.com/guide/topics/ui/controls/togglebutton.html</item>
-	        <item>14,L3,8,Spinners,http://developer.android.com/guide/topics/ui/controls/spinner.html</item>
-	        <item>15,L3,8,Pickers,http://developer.android.com/guide/topics/ui/controls/pickers.html</item>
-	    <item>16,L2,1,Input Events,http://developer.android.com/guide/topics/ui/ui-events.html</item>
-        <item>17,L2,1,Menus,http://developer.android.com/guide/topics/ui/menus.html</item>
-        <item>18,L2,1,Action Bar,http://developer.android.com/guide/topics/ui/actionbar.html</item>
-        <item>19,L2,1,Settings,http://developer.android.com/guide/topics/ui/settings.html</item>
-        <item>20,L2,1,Dialogs,http://developer.android.com/guide/topics/ui/dialogs.html</item>
-        <item>21,L2,1,Notifications,http://developer.android.com/guide/topics/ui/notifiers/notifications.html</item>
-        <item>22,L2,1,Toasts,http://developer.android.com/guide/topics/ui/notifiers/toasts.html</item>
-        <item>23,L2,1,Search,http://developer.android.com/guide/topics/search/index.html</item>
-	        <item>24,L3,23,Creating a Search Interface,http://developer.android.com/guide/topics/search/search-dialog.html</item>
-	        <item>25,L3,23,Adding Recent Query Suggestions,http://developer.android.com/guide/topics/search/adding-recent-query-suggestions.html</item>
-	        <item>26,L3,23,Adding Custom Suggestions,http://developer.android.com/guide/topics/search/adding-custom-suggestions.html</item>
-	        <item>27,L3,23,Searchable Configuration,http://developer.android.com/guide/topics/search/searchable-config.html</item>
-        <item>28,L2,1,Drag and Drop,http://developer.android.com/guide/topics/ui/drag-drop.html</item>
-        <item>29,L2,1,Accessibility,http://developer.android.com/guide/topics/ui/accessibility/index.html</item>
-        	<item>30,L3,29,Making Applications Accessible,http://developer.android.com/guide/topics/ui/accessibility/apps.html</item>
-        	<item>31,L3,29,Accessibility Developer Checklist,http://developer.android.com/guide/topics/ui/accessibility/checklist.html</item>
-        	<item>32,L3,29,Building Accessibility Services,http://developer.android.com/guide/topics/ui/accessibility/services.html</item>
-        <item>33,L2,1,Styles and Themes,http://developer.android.com/guide/topics/ui/themes.html</item>
-        <item>34,L2,1,Custom Components,http://developer.android.com/guide/topics/ui/custom-components.html</item>
+        <item>1,L1,0,App Components,http://developer.android.com/guide/components/index.html</item>
+        <item>2,L2,1,Intents and Intent Filters,http://developer.android.com/guide/components/intents-filters.html</item>
+        	<item>3,L3,2,Common Intents,http://developer.android.com/guide/components/intents-common.html</item>
+        <item>4,L2,1,Activities,http://developer.android.com/guide/components/activities.html</item>
+			<item>5,L3,4,Fragments,http://developer.android.com/guide/components/intents-common.html</item>
+			<item>6,L3,4,Loaders,http://developer.android.com/guide/components/loaders.html</item>
+			<item>7,L3,4,Tasks and Back Stack,http://developer.android.com/guide/components/tasks-and-back-stack.html</item>
+		<item>8,L2,1,Services,http://developer.android.com/guide/components/services.html</item>
+			<item>9,L3,8,Bound Services,http://developer.android.com/guide/components/bound-services.html</item>
+			<item>10,L3,8,AIDL,http://developer.android.com/guide/components/aidl.html</item>
+	    <item>11,L2,1,Content Providers,http://developer.android.com/guide/topics/providers/content-providers.html</item>
+	    	<item>12,L3,11,Content Provider Basics,http://developer.android.com/guide/topics/providers/content-provider-basics.html</item>
+			<item>13,L3,11,Creating a Content Provider,http://developer.android.com/guide/topics/providers/content-provider-creating.html</item>
+			<item>14,L3,11,Calendar Provider,http://developer.android.com/guide/topics/providers/calendar-provider.html</item>
+			<item>15,L3,11,Contacts Provider,http://developer.android.com/guide/topics/providers/contacts-provider.html</item>
+			<item>16,L3,11,Storage Access Framework,http://developer.android.com/guide/topics/providers/document-provider.html</item>
+		<item>17,L2,1,App Widgets,http://developer.android.com/guide/topics/appwidgets/index.html</item>
+	    	<item>18,L3,17,App Widget Host,http://developer.android.com/guide/topics/appwidgets/host.html</item>
+	    <item>19,L2,1,Processes and Threads,http://developer.android.com/guide/components/processes-and-threads.html</item>
     </string-array>
     
+    <!-- not checked -->
     <string-array name="array3">
         <item>1,L1,0,App Resources,http://developer.android.com/guide/topics/resources/index.html</item>
         <item>2,L2,1,Overview,http://developer.android.com/guide/topics/resources/overview.html</item>
@@ -117,10 +87,77 @@
         <item>11,L3,6,Menu,http://developer.android.com/guide/topics/resources/menu-resource.html</item>
         <item>12,L3,6,String,http://developer.android.com/guide/topics/resources/string-resource.html</item>
         <item>13,L3,6,Style,http://developer.android.com/guide/topics/resources/style-resource.html</item>
-        <item>14,L3,6,More Resource Types,http://developer.android.com/guide/topics/resources/more-resources.html</item>
+        <item>14,L3,6,More Types,http://developer.android.com/guide/topics/resources/more-resources.html</item>
     </string-array>    
-    
+ 
     <string-array name="array4">
+        <item>1,L1,0,App Manifest,http://developer.android.com/guide/topics/manifest/manifest-intro.html</item>
+        <item>2,L2,1,<![CDATA[<action>]]>,http://developer.android.com/guide/topics/manifest/action-element.html</item>
+        <item>3,L2,1,<![CDATA[<activity>]]>,http://developer.android.com/guide/topics/manifest/activity-element.html</item>
+        <item>4,L2,1,<![CDATA[<activity-alias>]]>,http://developer.android.com/guide/topics/manifest/activity-alias-element.html</item>
+        <item>5,L2,1,<![CDATA[<application>]]>,http://developer.android.com/guide/topics/manifest/application-element.html</item>
+        <item>6,L2,1,<![CDATA[<category>]]>,http://developer.android.com/guide/topics/manifest/category-element.html</item>
+        <item>7,L2,1,<![CDATA[<compatible-screens>]]>,http://developer.android.com/guide/topics/manifest/compatible-screens-element.html</item>
+        <item>8,L2,1,<![CDATA[<data>]]>,http://developer.android.com/guide/topics/manifest/data-element.html</item>
+        <item>9,L2,1,<![CDATA[<grant-uri-permission>]]>,http://developer.android.com/guide/topics/manifest/activity-alias-element.html</item>
+        <item>10,L2,1,<![CDATA[<instrumentation>]]>,http://developer.android.com/guide/topics/manifest/instrumentation-element.html</item>
+        <item>11,L2,1,<![CDATA[<intent-filter>]]>,http://developer.android.com/guide/topics/manifest/intent-filter-element.html</item>
+        <item>12,L2,1,<![CDATA[<manifest>]]>,http://developer.android.com/guide/topics/manifest/manifest-element.html</item>
+        <item>13,L2,1,<![CDATA[<meta-data>]]>,http://developer.android.com/guide/topics/manifest/meta-data-element.html</item>
+        <item>14,L2,1,<![CDATA[<path-permission>]]>,http://developer.android.com/guide/topics/manifest/path-permission-element.html</item>
+        <item>15,L2,1,<![CDATA[<permission>]]>,http://developer.android.com/guide/topics/manifest/application-element.html</item>
+        <item>16,L2,1,<![CDATA[<permission-group>]]>,http://developer.android.com/guide/topics/manifest/permission-group-element.html</item>
+        <item>17,L2,1,<![CDATA[<permission-tree>]]>,http://developer.android.com/guide/topics/manifest/permission-tree-element.html</item>
+        <item>18,L2,1,<![CDATA[<provider>]]>,http://developer.android.com/guide/topics/manifest/provider-element.html</item>
+        <item>19,L2,1,<![CDATA[<receiver>]]>,http://developer.android.com/guide/topics/manifest/receiver-element.html</item>
+        <item>20,L2,1,<![CDATA[<service>]]>,http://developer.android.com/guide/topics/manifest/service-element.html</item>
+        <item>21,L2,1,<![CDATA[<supports-gl-texture>]]>,http://developer.android.com/guide/topics/manifest/supports-gl-texture-element.html</item>
+        <item>22,L2,1,<![CDATA[<supports-screens>]]>,http://developer.android.com/guide/topics/manifest/supports-screens-element.html</item>
+        <item>23,L2,1,<![CDATA[<uses-configuration>]]>,http://developer.android.com/guide/topics/manifest/uses-configuration-element.html</item>
+        <item>24,L2,1,<![CDATA[<uses-feature>]]>,http://developer.android.com/guide/topics/manifest/uses-feature-element.html</item>
+        <item>25,L2,1,<![CDATA[<uses-library>]]>,http://developer.android.com/guide/topics/manifest/uses-library-element.html</item>
+        <item>26,L2,1,<![CDATA[<uses-permission>]]>,http://developer.android.com/guide/topics/manifest/uses-permission-element.html</item>
+        <item>27,L2,1,<![CDATA[<uses-sdk>]]>,http://developer.android.com/guide/topics/manifest/uses-sdk-element.html</item>       
+    </string-array>
+
+    <string-array name="array5">
+        <item>1,L1,0,User Interface,http://developer.android.com/guide/topics/ui/index.html</item>
+        <item>2,L2,1,Overview,http://developer.android.com/guide/topics/ui/overview.html</item>
+        <item>3,L2,1,Layouts,http://developer.android.com/guide/topics/ui/declaring-layout.html</item>
+	        <item>4,L3,3,Linear Layout,http://developer.android.com/guide/topics/ui/layout/linear.html</item>
+	        <item>5,L3,3,Relative Layout,http://developer.android.com/guide/topics/ui/layout/relative.html</item>
+	        <item>6,L3,3,List View,http://developer.android.com/guide/topics/ui/layout/listview.html</item>
+	        <item>7,L3,3,Grid View,http://developer.android.com/guide/topics/ui/layout/gridview.html</item>
+        <item>8,L2,1,Input Controls,http://developer.android.com/guide/topics/ui/controls.html</item>
+	        <item>9,L3,8,Buttons,http://developer.android.com/guide/topics/ui/controls/button.html</item>
+	        <item>10,L3,8,Text Fields,http://developer.android.com/guide/topics/ui/controls/text.html</item>
+	        <item>11,L3,8,Checkboxes,http://developer.android.com/guide/topics/ui/controls/checkbox.html</item>
+	        <item>12,L3,8,Radio Buttons,http://developer.android.com/guide/topics/ui/controls/radiobutton.html</item>
+	        <item>13,L3,8,Toggle Buttons,http://developer.android.com/guide/topics/ui/controls/togglebutton.html</item>
+	        <item>14,L3,8,Spinners,http://developer.android.com/guide/topics/ui/controls/spinner.html</item>
+	        <item>15,L3,8,Pickers,http://developer.android.com/guide/topics/ui/controls/pickers.html</item>
+	    <item>16,L2,1,Input Events,http://developer.android.com/guide/topics/ui/ui-events.html</item>
+	    <item>17,L2,1,Menus,http://developer.android.com/guide/topics/ui/menus.html</item>
+	    <item>18,L2,1,Action Bar,http://developer.android.com/guide/topics/ui/actionbar.html</item>
+	    <item>19,L2,1,Settings,http://developer.android.com/guide/topics/ui/settings.html</item>
+	    <item>20,L2,1,Dialogs,http://developer.android.com/guide/topics/ui/dialogs.html</item>
+	    <item>21,L2,1,Notifications,http://developer.android.com/guide/topics/ui/notifiers/notifications.html</item>
+	    <item>22,L2,1,Toasts,http://developer.android.com/guide/topics/ui/notifiers/toasts.html</item>
+        <item>23,L2,1,Search,http://developer.android.com/guide/topics/search/index.html</item>
+	        <item>24,L3,23,Creating a Search Interface,http://developer.android.com/guide/topics/search/search-dialog.html</item>
+	        <item>25,L3,23,Adding Recent Query Suggestions,http://developer.android.com/guide/topics/search/adding-recent-query-suggestions.html</item>
+	        <item>26,L3,23,Adding Custom Suggestions,http://developer.android.com/guide/topics/search/adding-custom-suggestions.html</item>
+	        <item>27,L3,23,Searchable Configuration,http://developer.android.com/guide/topics/search/searchable-config.html</item>
+	    <item>28,L2,1,Drag and Drop,http://developer.android.com/guide/topics/ui/drag-drop.html</item>
+        <item>29,L2,1,Accessibility,http://developer.android.com/guide/topics/ui/accessibility/index.html</item>
+	        <item>30,L3,29,Making Applications Accessible,http://developer.android.com/guide/topics/ui/accessibility/apps.html</item>
+	        <item>31,L3,29,Accessibility Developer Checklist,http://developer.android.com/guide/topics/ui/accessibility/checklist.html</item>
+	        <item>32,L3,29,Building Accessibility Services,http://developer.android.com/guide/topics/ui/accessibility/services.html</item>
+	    <item>33,L2,1,Styles and Themes,http://developer.android.com/guide/topics/ui/themes.html</item>
+	    <item>34,L2,1,Custom Components,http://developer.android.com/guide/topics/ui/custom-components.html</item>     
+	</string-array>
+    
+    <string-array name="array6">
         <item>1,L1,0,Animation and Graphics,http://developer.android.com/guide/topics/graphics/index.html</item>
         <item>2,L2,1,Overview,http://developer.android.com/guide/topics/graphics/overview.html</item>
         <item>3,L2,1,Property Animation,http://developer.android.com/guide/topics/graphics/prop-animation.html</item>
@@ -131,14 +168,14 @@
         <item>8,L3,6,Hardware Acceleration,http://developer.android.com/guide/topics/graphics/hardware-accel.html</item>
     </string-array>    
     
-    <string-array name="array5">
+    <string-array name="array7">
         <item>1,L1,0,Computation,http://developer.android.com/guide/topics/renderscript/index.html</item>
         <item>2,L2,1,RenderScript,http://developer.android.com/guide/topics/renderscript/compute.html</item>
         <item>3,L2,1,Advanced RenderScript,http://developer.android.com/guide/topics/renderscript/advanced.html</item>
         <item>4,L2,1,Runtime API Reference,http://developer.android.com/guide/topics/renderscript/reference.html</item>
     </string-array>    
     
-    <string-array name="array6">
+    <string-array name="array8">
         <item>1,L1,0,Media and Camera,http://developer.android.com/guide/topics/media/index.html</item>
         <item>2,L2,1,Media Playback,http://developer.android.com/guide/topics/media/mediaplayer.html</item>
         <item>3,L2,1,Supported Media Formats,http://developer.android.com/guide/appendix/media-formats.html</item>
@@ -147,7 +184,7 @@
         <item>6,L2,1,Camera,http://developer.android.com/guide/topics/media/camera.html</item>
     </string-array> 
        
-    <string-array name="array7">
+    <string-array name="array9">
         <item>1,L1,0,Location and Sensors APIs,http://developer.android.com/guide/topics/sensors/index.html</item>
         <item>2,L2,1,Location and Maps,http://developer.android.com/guide/topics/location/index.html</item>
         <item>3,L2,1,Location Strategies,http://developer.android.com/guide/topics/location/strategies.html</item>
@@ -157,7 +194,7 @@
         <item>7,L2,1,Environment Sensors,http://developer.android.com/guide/topics/sensors/sensors_environment.html</item>
     </string-array>    
     
-    <string-array name="array8">
+    <string-array name="array10">
         <item>1,L1,0,Connectivity,http://developer.android.com/guide/topics/connectivity/index.html</item>
         <item>2,L2,1,Bluetooth,http://developer.android.com/guide/topics/connectivity/bluetooth.html</item>
         	<item>3,L3,2,Bluetooth Low Energy,http://developer.android.com/guide/topics/connectivity/bluetooth-le.html</item>
@@ -176,26 +213,26 @@
 		<item>16,L2,1,SIP,http://developer.android.com/guide/topics/connectivity/sip.html</item>
     </string-array>    
     
-    <string-array name="array9">
+    <string-array name="array11">
         <item>1,L1,0,Text and Input,http://developer.android.com/guide/topics/text/index.html</item>
         <item>2,L2,1,Copy and Paste,http://developer.android.com/guide/topics/text/copy-paste.html</item>
         <item>3,L2,1,Creating an IME,http://developer.android.com/guide/topics/text/creating-input-method.html</item>
         <item>4,L2,1,Spelling Checker,http://developer.android.com/guide/topics/text/spell-checker-framework.html</item>
     </string-array>    
     
-    <string-array name="array10">
+    <string-array name="array12">
         <item>1,L1,0,Data Storage,http://developer.android.com/guide/topics/data/index.html</item>
         <item>2,L2,1,Storage Options,http://developer.android.com/guide/topics/data/data-storage.html</item>
         <item>3,L2,1,Data Backup,http://developer.android.com/guide/topics/data/backup.html</item>
         <item>4,L2,1,App Install Location,http://developer.android.com/guide/topics/data/install-location.html</item>
     </string-array>
     
-    <string-array name="array11">
+    <string-array name="array13">
         <item>1,L1,0,Administration,http://developer.android.com/guide/topics/admin/index.html</item>
         <item>2,L2,1,Device Administration,http://developer.android.com/guide/topics/admin/device-admin.html</item>
     </string-array>    
     
-    <string-array name="array12">
+    <string-array name="array14">
         <item>1,L1,0,Web Apps,http://developer.android.com/guide/webapps/index.html</item>
         <item>2,L2,1,Supporting Different Screens in Web Apps,http://developer.android.com/guide/webapps/targeting.html</item>
         <item>3,L2,1,Building Web Apps in WebView,http://developer.android.com/guide/webapps/webview.html</item>
@@ -204,7 +241,7 @@
         <item>6,L2,1,Best Practices for Web Apps,http://developer.android.com/guide/webapps/best-practices.html</item> 
     </string-array>
     
-    <string-array name="array13">
+    <string-array name="array15">
         <item>1,L1,0,Best Practices,http://developer.android.com/guide/practices/index.html</item>
         <item>2,L2,1,Compatibility,http://developer.android.com/guide/practices/compatibility.html</item>
         <item>3,L2,1,Supporting Multiple Screens,http://developer.android.com/guide/practices/screens_support.html</item>
