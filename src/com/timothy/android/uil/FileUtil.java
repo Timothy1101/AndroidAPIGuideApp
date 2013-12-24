@@ -28,16 +28,20 @@ public final static String LOG_TAG = "FileUtil";
 	}
 
 	public static void deleteFolder(File dir) {
-		File filelist[] = dir.listFiles();
-		int listlen = filelist.length;
-		for (int i = 0; i < listlen; i++) {
-			if (filelist[i].isDirectory()) {
-				deleteFolder(filelist[i]);
-			} else {
-				filelist[i].delete();
+		if(dir.exists()){
+			File filelist[] = dir.listFiles();
+			if(filelist!=null){
+				int listlen = filelist.length;
+				for (int i = 0; i < listlen; i++) {
+					if (filelist[i].isDirectory()) {
+						deleteFolder(filelist[i]);
+					} else {
+						filelist[i].delete();
+					}
+				}
 			}
+			dir.delete();			
 		}
-		dir.delete();
 	}
 
 	/**

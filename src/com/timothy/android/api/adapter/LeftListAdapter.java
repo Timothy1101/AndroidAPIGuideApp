@@ -3,17 +3,12 @@ package com.timothy.android.api.adapter;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.timothy.android.api.activity.R;
-import com.timothy.android.api.activity.SlidingActivity;
 import com.timothy.android.uil.SPUtil;
 import com.timothy.android.uil.StringUtil;
-
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +20,7 @@ public class LeftListAdapter extends BaseAdapter{
 
 	public static final String LOG_TAG = "LeftListAdapter";
 	
-	private Context mContext;
+//	private Context mContext;
 	private String[] initialContentsArray;
 	private String[] contentsArrayExL3;
 	private int currId;
@@ -33,13 +28,16 @@ public class LeftListAdapter extends BaseAdapter{
 	SharedPreferences sp;
 	
 	private boolean expandFlag = false;
+	private String expandId;
 	
 	private boolean ifHasChildItems(String index){
 		boolean has = false;
+//		if(Integer.valueOf(index) == 1){//exclude L1 item
+//			return has;
+//		}
 		for(String content: initialContentsArray){
 	        String[] contentArray = content.split(",");
-	        String contentSuperId = contentArray[2];
-	        if(contentSuperId.equalsIgnoreCase(index)){
+	        if(Integer.valueOf(contentArray[2]) == Integer.valueOf(index)){
 	        	has = true;
 	        	break;
 	        }
@@ -67,7 +65,7 @@ public class LeftListAdapter extends BaseAdapter{
 	}
 	
 	public LeftListAdapter(Context context, String[] filteredContents,int currId) {
-		this.mContext = context;
+//		this.mContext = context;
 		mInflater = LayoutInflater.from(context); 
 		this.initialContentsArray = filteredContents;
 		this.contentsArrayExL3 = hiddenL3Items(filteredContents);
@@ -129,10 +127,21 @@ public class LeftListAdapter extends BaseAdapter{
 		if(contentLevel.equalsIgnoreCase("L1")){
 			holder.openImg.setBackgroundResource(R.drawable.ic_home);
 			holder.openImg.setVisibility(View.VISIBLE);
-			holder.title.setTextSize(15.0f);
+			holder.openImg.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v) {
+
+				}
+			});
+			holder.title.setTextSize(14.0f);
 		}else if(contentLevel.equalsIgnoreCase("L2")) {
 			if(ifHasChildItems(contentId)){
-				holder.openImg.setBackgroundResource(R.drawable.ic_action_expand);
+				if(expandFlag && contentId.equalsIgnoreCase(expandId)){
+					holder.openImg.setBackgroundResource(R.drawable.ic_action_collapse);
+				}else{
+					holder.openImg.setBackgroundResource(R.drawable.ic_action_expand);
+				}
+				
 				holder.openImg.setVisibility(View.VISIBLE);
 				holder.openImg.setOnClickListener(new View.OnClickListener() {
 					@Override
@@ -149,10 +158,16 @@ public class LeftListAdapter extends BaseAdapter{
 				holder.openImg.setBackgroundResource(R.drawable.ic_action_expand);
 				holder.openImg.setVisibility(View.INVISIBLE);
 			}
-			holder.title.setTextSize(15.0f);
+			holder.title.setTextSize(14.0f);
 		}else if(contentLevel.equalsIgnoreCase("L3")) {
 			holder.openImg.setBackgroundResource(R.drawable.bullet_48);
 			holder.openImg.setVisibility(View.VISIBLE);
+			holder.openImg.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v) {
+
+				}
+			});
 			holder.title.setTextSize(12.5f);
 		}
 		
@@ -178,11 +193,16 @@ public class LeftListAdapter extends BaseAdapter{
 	}
 	
 	private void changeList(String contentId){
-		if(expandFlag){
+		if(!contentId.equalsIgnoreCase(expandId)){
 			addL3Content(contentId);
 		}else{
-			recoverExL3Content();
+			if(!expandFlag){
+				addL3Content(contentId);
+			}else{
+				recoverExL3Content();
+			}
 		}
+		expandId = contentId;
 		expandFlag = !expandFlag;
 	}
 	

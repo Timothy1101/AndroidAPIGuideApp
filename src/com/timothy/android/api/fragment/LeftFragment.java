@@ -47,8 +47,7 @@ public class LeftFragment extends ListFragment {
 	TextView title;
 	
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
 		final View view = inflater.inflate(R.layout.left_list, null);
 		title = (TextView) view.findViewById(R.id.indexTV);
 		int branchIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_BRANCH_INDEX, sp);
@@ -85,12 +84,16 @@ public class LeftFragment extends ListFragment {
 		mContext = getActivity().getApplicationContext();
 		activity = (SlidingActivity) getActivity();
 		sp = activity.getSharedPreferences("AndroidAPISP",0);
+		
 		//get branch list
 		branchNames = getResources().getStringArray(R.array.branch_array);
+		
 		int currentIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_INDEX, sp);
 		int branchIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_BRANCH_INDEX, sp);
+		
 		Log.i(LOG_TAG, "branchIndex:"+branchIndex);
 		Log.i(LOG_TAG, "currentIndex:"+currentIndex);
+		
 		contentsArray = activity.filterBranch(branchIndex);
 		//set list
 		refreshList(currentIndex,contentsArray);
@@ -99,13 +102,28 @@ public class LeftFragment extends ListFragment {
 	public void onListItemClick(ListView parent, View v, int position, long id) {
 		Log.i(LOG_TAG, "onListItemClick()...");
 		Log.i(LOG_TAG, "position:"+String.valueOf(position));
-		String contents = contentsArray[position];
-		Log.i(LOG_TAG, "contents:"+contents);
-		String[] contentArray = contents.split(",");
-		int contentId = Integer.valueOf(contentArray[0]);
-		Log.i(LOG_TAG, "contentId:"+String.valueOf(contentId));
+		
+		TextView tv = (TextView) v.findViewById(R.id.titleItem);
+		Log.i(LOG_TAG,  tv.getText().toString());
+		
+		int contentId = 0;
+		for(String contents:contentsArray){
+			String[] content = contents.split(",");
+			if(content[3].equalsIgnoreCase(tv.getText().toString())){
+				contentId = Integer.valueOf(content[0]);
+				break;
+			}
+		}
+		
+		Log.i(LOG_TAG,  "contentId:" + String.valueOf(contentId));
 		SPUtil.save2SP(SPUtil.CURRENT_INDEX,contentId , sp);
 		refreshActivity();
+		
+//		String contents = contentsArray[position];
+//		Log.i(LOG_TAG, "contents:"+contents);
+//		String[] contentArray = contents.split(",");
+//		int contentId = Integer.valueOf(contentArray[0]);
+//		Log.i(LOG_TAG, "contentId:"+String.valueOf(contentId));
 	}
 	
 	public void refreshList(int currentId,String[] contentsArray){
