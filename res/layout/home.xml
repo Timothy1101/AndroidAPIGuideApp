@@ -21,4 +21,15 @@
         android:text="@string/content_home"
         android:textSize="25sp" >
     </TextView>
+    
+    <TextView
+        android:id="@+id/updateTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/version_update"
+        android:textSize="15sp" >
+    </TextView>
 </LinearLayout>

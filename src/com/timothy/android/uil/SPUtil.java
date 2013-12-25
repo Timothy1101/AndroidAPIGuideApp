@@ -30,7 +30,8 @@ public class SPUtil {
 	public final static String CURRENT_INDEX = "CURRENT_INDEX";
 	public final static String CURRENT_BRANCH_INDEX = "CURRENT_BRANCH_INDEX";
 	
-	public final static String CLEAR_FLAG = "CLEAR_FLAG";
+	public final static String FOLDE_DELETE_FLAG = "FOLDE_DELETE_FLAG";
+	public final static String FIRST_LOAD_FLAG = "FIRST_LOAD_FLAG";
 	
 	// save String to SP
 	public static void save2SP(String key, String value, SharedPreferences sp) {

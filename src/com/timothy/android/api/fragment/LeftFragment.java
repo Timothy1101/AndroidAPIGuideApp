@@ -164,8 +164,11 @@ public class LeftFragment extends ListFragment {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
-				String[] contentsArray = activity.filterBranch(arg2+1); 
+//				String[] contentsArray = activity.filterBranch(arg2+1);
+				contentsArray = activity.filterBranch(arg2+1);
+				
 				refreshList(1,contentsArray);
+				
 				SPUtil.save2SP(SPUtil.CURRENT_BRANCH_INDEX, arg2+1, sp);
 				
 				String[] branchNameArr = branchNames[arg2].split(",");

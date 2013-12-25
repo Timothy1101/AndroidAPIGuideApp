@@ -8,10 +8,14 @@ import com.timothy.android.uil.SPUtil;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.PixelFormat;
 import android.os.Handler;
+import android.util.Log;
 import android.view.WindowManager;
 
 public class LoadActivity extends Activity {
@@ -34,9 +38,10 @@ public class LoadActivity extends Activity {
 		SharedPreferences sp = this.getSharedPreferences("AndroidAPISP",0);
 		
 		//remove folder first for new version
-		if(SPUtil.getFromSP(SPUtil.CLEAR_FLAG, sp) == null){
+		int versionCode = getVersion(getApplicationContext());
+		if(versionCode == 3 && (SPUtil.getFromSP(SPUtil.FOLDE_DELETE_FLAG, sp) == null)){
 			FileUtil.deleteFolder(appHome);
-			SPUtil.save2SP(SPUtil.CLEAR_FLAG, "YES", sp);
+			SPUtil.save2SP(SPUtil.FOLDE_DELETE_FLAG, "YES", sp);
 		}
 		
 		if(!appHome.isDirectory()){
@@ -69,4 +74,14 @@ public class LoadActivity extends Activity {
             }
         }, LOAD_DISPLAY_TIME); 
     }
+    
+    private int getVersion(Context context) {
+		try {
+			PackageInfo manager = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
+			return manager.versionCode;
+			
+		} catch (NameNotFoundException e) {
+			return -1;
+		}
+	}
 }

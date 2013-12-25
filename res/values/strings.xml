@@ -2,13 +2,13 @@
 <resources>
 
     <string name="app_name">Android API Guides</string>
-    <string name="app_cover_name">Android API Guides v1.1</string>
+    <string name="app_cover_name">Android API Guides 1.2</string>
     <string name="msg_exit_hint">Click again to exit</string>
     
     <!-- Left Flagment -->
     <string name="left_title">Contents</string>
 	<string name="left_title_et_hint">Search</string>
-    <string name="content_home">Android API Guide</string>
+    <string name="content_home">Android API Guide 1.2</string>
     
     <!-- Right Flagment -->
     <string name="setting">Setting</string>
@@ -24,6 +24,10 @@
 	<string name="contact">tangqi1101@gmail.com</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    
+    <string name="version_update"><![CDATA[
+        Recent changes:\n1 Update UI \n2 Get latest content list from official website \n3 Fix some bugs
+    ]]></string>
 
     <string-array name="branch_array">
         <item>1,Introduction</item>
@@ -80,14 +84,14 @@
         <item>4,L2,1,Accessing Resources,http://developer.android.com/guide/topics/resources/accessing-resources.html</item>
         <item>5,L2,1,Localizing with Resources,http://developer.android.com/guide/topics/resources/localization.html</item>
         <item>6,L2,1,Resource Types,http://developer.android.com/guide/topics/resources/available-resources.html</item>
-        <item>7,L3,6,Animation,http://developer.android.com/guide/topics/resources/animation-resource.html</item>
-        <item>8,L3,6,Color State List,http://developer.android.com/guide/topics/resources/color-list-resource.html</item>
-        <item>9,L3,6,Drawable,http://developer.android.com/guide/topics/resources/drawable-resource.html</item>
-        <item>10,L3,6,Layout,http://developer.android.com/guide/topics/resources/layout-resource.html</item>
-        <item>11,L3,6,Menu,http://developer.android.com/guide/topics/resources/menu-resource.html</item>
-        <item>12,L3,6,String,http://developer.android.com/guide/topics/resources/string-resource.html</item>
-        <item>13,L3,6,Style,http://developer.android.com/guide/topics/resources/style-resource.html</item>
-        <item>14,L3,6,More Types,http://developer.android.com/guide/topics/resources/more-resources.html</item>
+	        <item>7,L3,6,Animation,http://developer.android.com/guide/topics/resources/animation-resource.html</item>
+	        <item>8,L3,6,Color State List,http://developer.android.com/guide/topics/resources/color-list-resource.html</item>
+	        <item>9,L3,6,Drawable,http://developer.android.com/guide/topics/resources/drawable-resource.html</item>
+	        <item>10,L3,6,Layout,http://developer.android.com/guide/topics/resources/layout-resource.html</item>
+	        <item>11,L3,6,Menu,http://developer.android.com/guide/topics/resources/menu-resource.html</item>
+	        <item>12,L3,6,String,http://developer.android.com/guide/topics/resources/string-resource.html</item>
+	        <item>13,L3,6,Style,http://developer.android.com/guide/topics/resources/style-resource.html</item>
+	        <item>14,L3,6,More Types,http://developer.android.com/guide/topics/resources/more-resources.html</item>
     </string-array>    
  
     <string-array name="array4">

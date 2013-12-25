@@ -137,9 +137,9 @@ public class LeftListAdapter extends BaseAdapter{
 		}else if(contentLevel.equalsIgnoreCase("L2")) {
 			if(ifHasChildItems(contentId)){
 				if(expandFlag && contentId.equalsIgnoreCase(expandId)){
-					holder.openImg.setBackgroundResource(R.drawable.ic_action_collapse);
+					holder.openImg.setBackgroundResource(R.drawable.ic_action_collapse_selector);
 				}else{
-					holder.openImg.setBackgroundResource(R.drawable.ic_action_expand);
+					holder.openImg.setBackgroundResource(R.drawable.ic_action_expand_selector);
 				}
 				
 				holder.openImg.setVisibility(View.VISIBLE);
@@ -155,7 +155,7 @@ public class LeftListAdapter extends BaseAdapter{
 					}
 				});
 			}else{
-				holder.openImg.setBackgroundResource(R.drawable.ic_action_expand);
+				holder.openImg.setBackgroundResource(R.drawable.ic_action_expand_selector);
 				holder.openImg.setVisibility(View.INVISIBLE);
 			}
 			holder.title.setTextSize(14.0f);

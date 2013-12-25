@@ -94,19 +94,29 @@ public class ViewPagesFragment extends Fragment {
 		});
 		
 		currentIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_INDEX, sp);
+		Log.i(LOG_TAG, "currentIndex:"+String.valueOf(currentIndex));
+		
 		showRight = (ImageView) mView.findViewById(R.id.showRight);
 		mPager = (ViewPager) mView.findViewById(R.id.pager);
 		progressBar = (ProgressBar) mView.findViewById(R.id.loading_spinner);
-		if(currentIndex == -1){
+		
+		String firstLoad = SPUtil.getFromSP(SPUtil.FIRST_LOAD_FLAG, sp);
+//		if(currentIndex == -1){
+	    if(firstLoad == null){
 			HomeFragment homeFrag = new HomeFragment();
 			pagerItemList.add(homeFrag);
 			setAdapter();
+			
+			SPUtil.save2SP(SPUtil.FIRST_LOAD_FLAG, "No", sp);
+			
 		}else{
-			Log.i(LOG_TAG, "currentIndex:"+String.valueOf(currentIndex));
-//			contentsArray = getResources().getStringArray(R.array.contents_array);
+			
 			int branchIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_BRANCH_INDEX, sp);
+			Log.i(LOG_TAG, "branchIndex:"+String.valueOf(branchIndex));
+			
 			contentsArray = activity.filterBranch(branchIndex);
 			contents = ContentUtil.getContentsById(contentsArray, currentIndex);
+			
 			if(contents!=null){
 				Log.i(LOG_TAG, "contents:"+contents);
 				contentArray = contents.split(",");
@@ -160,7 +170,7 @@ public class ViewPagesFragment extends Fragment {
 					}					
 				}
 			}else{
-				titleTV.setText("Error");
+				titleTV.setText("Error,try again!");
 			}
 		}
 		

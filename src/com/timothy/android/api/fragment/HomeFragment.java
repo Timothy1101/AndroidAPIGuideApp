@@ -27,16 +27,17 @@ import com.timothy.android.api.activity.R;
 public class HomeFragment extends Fragment {
 
 	Context mContext;
-	TextView tv;
+	TextView homeTV;
+	TextView updateTV;
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		
 		mContext = getActivity().getApplicationContext();
 		
 		View view = inflater.inflate(R.layout.home, null);
-		tv = (TextView) view.findViewById(R.id.homeTV);
+		homeTV = (TextView) view.findViewById(R.id.homeTV);
 //		tv.setText(R.string.content_home);
-		tv.setOnClickListener(new View.OnClickListener() {
+		homeTV.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
@@ -54,6 +55,8 @@ public class HomeFragment extends Fragment {
 				
 			}
 		});
+		
+//		updateTV = (TextView) view.findViewById(R.id.updateTV);
 		
 		return view;
 	}
