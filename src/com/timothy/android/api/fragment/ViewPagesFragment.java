@@ -102,7 +102,7 @@ public class ViewPagesFragment extends Fragment {
 		
 		String firstLoad = SPUtil.getFromSP(SPUtil.FIRST_LOAD_FLAG, sp);
 //		if(currentIndex == -1){
-	    if(firstLoad == null){
+	    if(firstLoad == null || currentIndex == -1){
 			HomeFragment homeFrag = new HomeFragment();
 			pagerItemList.add(homeFrag);
 			setAdapter();

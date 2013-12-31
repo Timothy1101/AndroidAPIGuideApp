@@ -38,6 +38,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import com.timothy.android.api.adapter.LeftListAdapter;
 import com.timothy.android.api.activity.R;
 import com.timothy.android.api.activity.SlidingActivity;
+import com.timothy.android.api.view.SlidingMenu;
 import com.timothy.android.uil.SPUtil;
 import com.timothy.android.uil.StringUtil;
 
@@ -159,7 +160,8 @@ public class LeftFragment extends ListFragment {
 		popupWindow.setOutsideTouchable(true);
 		popupWindow.setFocusable(true);
 		popupWindow.setContentView(layout);
-		popupWindow.showAtLocation(activity.findViewById(R.id.view_pagers), Gravity.LEFT| Gravity.TOP, x, y);
+//		popupWindow.showAtLocation(activity.findViewById(R.id.view_pagers), Gravity.LEFT| Gravity.TOP, x, y);
+		popupWindow.showAtLocation(activity.findViewById(R.id.slidingMenu), Gravity.LEFT| Gravity.TOP, x, y);
 		listView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,

@@ -125,8 +125,10 @@ public class LeftListAdapter extends BaseAdapter{
       		
         //set image
 		if(contentLevel.equalsIgnoreCase("L1")){
-			holder.openImg.setBackgroundResource(R.drawable.ic_home);
-			holder.openImg.setVisibility(View.VISIBLE);
+			holder.openImg.setImageResource(R.drawable.ic_home);
+			
+//			holder.openImg.setBackgroundResource(R.drawable.ic_home);
+//			holder.openImg.setVisibility(View.VISIBLE);
 			holder.openImg.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
@@ -137,12 +139,14 @@ public class LeftListAdapter extends BaseAdapter{
 		}else if(contentLevel.equalsIgnoreCase("L2")) {
 			if(ifHasChildItems(contentId)){
 				if(expandFlag && contentId.equalsIgnoreCase(expandId)){
-					holder.openImg.setBackgroundResource(R.drawable.ic_action_collapse_selector);
+//					holder.openImg.setBackgroundResource(R.drawable.ic_action_collapse_selector);
+					holder.openImg.setImageResource(R.drawable.ic_action_collapse_selector);
 				}else{
-					holder.openImg.setBackgroundResource(R.drawable.ic_action_expand_selector);
+//					holder.openImg.setBackgroundResource(R.drawable.ic_action_expand_selector);
+					holder.openImg.setImageResource(R.drawable.ic_action_expand_selector);
 				}
 				
-				holder.openImg.setVisibility(View.VISIBLE);
+//				holder.openImg.setVisibility(View.VISIBLE);
 				holder.openImg.setOnClickListener(new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
@@ -155,13 +159,15 @@ public class LeftListAdapter extends BaseAdapter{
 					}
 				});
 			}else{
-				holder.openImg.setBackgroundResource(R.drawable.ic_action_expand_selector);
-				holder.openImg.setVisibility(View.INVISIBLE);
+//				holder.openImg.setBackgroundResource(R.drawable.ic_action_expand_selector);
+//				holder.openImg.setVisibility(View.INVISIBLE);
+				holder.openImg.setImageResource(-1);
 			}
 			holder.title.setTextSize(14.0f);
 		}else if(contentLevel.equalsIgnoreCase("L3")) {
-			holder.openImg.setBackgroundResource(R.drawable.bullet_48);
-			holder.openImg.setVisibility(View.VISIBLE);
+//			holder.openImg.setBackgroundResource(R.drawable.bullet_48);
+//			holder.openImg.setVisibility(View.VISIBLE);
+			holder.openImg.setImageResource(R.drawable.bullet_48);
 			holder.openImg.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
@@ -176,9 +182,11 @@ public class LeftListAdapter extends BaseAdapter{
 		String appPath = SPUtil.getFromSP(SPUtil.APP_HOME_PATH, sp);
 		String contentPath = appPath +  File.separator + branchName +  File.separator + StringUtil.rmvSpace(contentName) +".xml";
 		if(new File(contentPath).exists()){
-			holder.downloadFlag.setVisibility(View.INVISIBLE);
+//			holder.downloadFlag.setVisibility(View.INVISIBLE);
+			holder.downloadFlag.setImageResource(-1);
 		}else{
-			holder.downloadFlag.setVisibility(View.VISIBLE);
+//			holder.downloadFlag.setVisibility(View.VISIBLE);
+			holder.downloadFlag.setImageResource(R.drawable.ic_action_download);
 		}
         return convertView; 
 	}

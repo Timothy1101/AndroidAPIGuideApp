@@ -357,6 +357,22 @@ public class HtmlCleanAPI {
 		return pageList;
 	}
 	
+	public List<HtmlContent> getHtmlList(TagNode node) {
+		List<HtmlContent> htmlList = new ArrayList<HtmlContent>();
+		TagNode[] tns = node.getAllElements(true);
+		for (TagNode tn : tns) {
+			if (tn.getName().equalsIgnoreCase("body")|| tn.getName().equalsIgnoreCase("head")) {
+				continue;
+			}
+			String tnText =  tn.getText().toString();
+			if (tn.getName().equalsIgnoreCase("img")){
+				tnText = tn.getAttributeByName("src");
+			}
+			htmlList.add(new HtmlContent(tn.getName(), tnText));
+		}
+		return htmlList;
+	}
+	
 	public PageContent getPage(TagNode node,int findPageNo) {
 		List<PageContent> pageList = getPageList(node);
 		for(PageContent pc:pageList){

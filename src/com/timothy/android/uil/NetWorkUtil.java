@@ -32,9 +32,9 @@ public class NetWorkUtil {
 		return false;
 	}
 
-	public static int NET_CNNT_BAIDU_OK = 1; // 正常访问因特网状态
-	public static int NET_CNNT_BAIDU_TIMEOUT = 2; // 无法访问因特网状态
-	public static int NET_NOT_PREPARE = 3; // 网络未准备好
+	public static int NET_CNNT_BAIDU_OK = 1; // 
+	public static int NET_CNNT_BAIDU_TIMEOUT = 2; // 
+	public static int NET_NOT_PREPARE = 3; // 
 	public static int NET_ERROR = 4;
 	private static int TIMEOUT = 3000;
 

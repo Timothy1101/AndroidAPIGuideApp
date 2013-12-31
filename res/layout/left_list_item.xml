@@ -9,9 +9,9 @@
     <ImageView
         android:id="@+id/openImg"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="3dp"/>
+        android:background="@drawable/title_item_style"/>
     
     <TextView
         android:id="@+id/titleItem"
@@ -20,16 +20,18 @@
         android:layout_weight="4"
         android:layout_gravity="center_vertical"
         android:gravity="center_vertical"
-        android:layout_marginLeft="3dp"
+        android:paddingLeft="4dp"
         android:textSize="14sp"
-        android:textColor="@color/text_color" />
-    
+        android:textColor="@color/text_color" 
+        android:background="@drawable/title_item_style"/>
     
     <ImageView
         android:id="@+id/downloadFlag"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         android:layout_gravity="center_vertical"
-        android:background="@drawable/ic_action_download"/>
+        android:background="@drawable/title_item_style"
+        android:src="@drawable/ic_action_download"/>
+    
 </LinearLayout>
 

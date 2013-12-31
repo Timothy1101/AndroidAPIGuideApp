@@ -4,7 +4,6 @@ import java.io.File;
 import com.timothy.android.api.activity.R;
 import com.timothy.android.uil.FileUtil;
 import com.timothy.android.uil.SPUtil;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
@@ -15,7 +14,6 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.PixelFormat;
 import android.os.Handler;
-import android.util.Log;
 import android.view.WindowManager;
 
 public class LoadActivity extends Activity {
@@ -57,7 +55,7 @@ public class LoadActivity extends Activity {
 		SPUtil.save2SP(SPUtil.APP_HOME_PATH, appHomePath, sp);
 		
 		String branch = SPUtil.getFromSP(SPUtil.BRANCH_PATH_NAME, sp);
-		if(branch==null) SPUtil.save2SP(SPUtil.BRANCH_PATH_NAME,"AppComponents", sp);
+		if(branch==null) SPUtil.save2SP(SPUtil.BRANCH_PATH_NAME,"Introduction", sp);
 		
 		int currentIndex = SPUtil.getIntegerFromSP(SPUtil.CURRENT_INDEX, sp);
 		if(currentIndex==-1) SPUtil.save2SP(SPUtil.CURRENT_INDEX, 1, sp);

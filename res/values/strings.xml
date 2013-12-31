@@ -253,4 +253,5 @@
 			<item>5,L3,3,Screen Compatibility Mode,http://developer.android.com/guide/practices/screen-compat-mode.html</item> 
     	<item>6,L2,1,Supporting Tablets and Handsets,http://developer.android.com/guide/practices/tablets-and-handsets.html</item>
     </string-array>
+
 </resources>

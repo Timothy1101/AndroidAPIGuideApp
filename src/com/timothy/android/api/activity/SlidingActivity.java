@@ -22,7 +22,7 @@ import android.view.KeyEvent;
 import android.widget.Toast;
 import com.timothy.android.api.activity.R;
 import com.timothy.android.api.fragment.LeftFragment;
-import com.timothy.android.api.fragment.PageFragment;
+import com.timothy.android.api.fragment.PageFragmentNew;
 import com.timothy.android.api.fragment.RightFragment;
 import com.timothy.android.api.fragment.ViewPagesFragment;
 import com.timothy.android.api.fragment.ViewPagesFragment.MyPageChangeListener;
@@ -34,8 +34,8 @@ public class SlidingActivity extends FragmentActivity {
 	LeftFragment leftFragment;
 	RightFragment rightFragment;
 	
-	ViewPagesFragment viewPageFragment;
-	PageFragment textFragment;
+//	ViewPagesFragment viewPageFragment;
+	PageFragmentNew pageFragmentNew;
 	
 	@Override
 	protected void onCreate(Bundle arg0) {
@@ -64,26 +64,30 @@ public class SlidingActivity extends FragmentActivity {
 		rightFragment = new RightFragment();
 		t.replace(R.id.right_frame, rightFragment);
 
-		viewPageFragment = new ViewPagesFragment();
-		t.replace(R.id.center_frame, viewPageFragment);
+//		viewPageFragment = new ViewPagesFragment();
+//		t.replace(R.id.center_frame, viewPageFragment);
+
+		pageFragmentNew = new PageFragmentNew();
+		t.replace(R.id.center_frame, pageFragmentNew);
 		
 		t.commit();
 		
 	}
 	
 	private void initListener() {
-		viewPageFragment.setMyPageChangeListener(new MyPageChangeListener() {
-			@Override
-			public void onPageSelected(int position) {
-				if(viewPageFragment.isFirst()){
-					mSlidingMenu.setCanSliding(true,false);
-				}else if(viewPageFragment.isEnd()){
-					mSlidingMenu.setCanSliding(false,true);
-				}else{
-					mSlidingMenu.setCanSliding(false,false);
-				}
-			}
-		});
+//		viewPageFragment.setMyPageChangeListener(new MyPageChangeListener() {
+//			@Override
+//			public void onPageSelected(int position) {
+//				if(viewPageFragment.isFirst()){
+//					mSlidingMenu.setCanSliding(true,false);
+//				}else if(viewPageFragment.isEnd()){
+//					mSlidingMenu.setCanSliding(false,true);
+//				}else{
+//					mSlidingMenu.setCanSliding(false,false);
+//				}
+//			}
+//		});
+		
 	}
 
 	public void showLeft() {
